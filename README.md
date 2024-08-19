@@ -1,7 +1,7 @@
 # blog
 
-### インストールするとき
-`npx create-next-app [project-name]`
+### 環境インストール
+`npm install`
 
-### 実行する時
+### 実行するとき
 `npm run dev`
