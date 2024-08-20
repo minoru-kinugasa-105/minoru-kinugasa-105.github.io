@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import '@/css/foundation/data.scss';
+import '@/css/foundation/base.scss';
+import '@/css/foundation/reset.scss';
 
 interface PageData {
   title: string;
@@ -14,7 +16,7 @@ const pageData: PageData = {
 export const metadata: Metadata = {
   title: pageData.title,
   description: pageData.description,
-    openGraph: {
+  openGraph: {
     title: pageData.title,
     description: pageData.description,
     url: "https://minoru-kinugasa-105.github.io/",
@@ -36,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href={

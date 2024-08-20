@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "minoru-kinugasa-105.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
     "@types/node": "^20",
