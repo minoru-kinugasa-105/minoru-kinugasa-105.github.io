@@ -14,20 +14,31 @@ const pageData: PageData = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://minoru-kinugasa-105.github.io/'), 
   title: pageData.title,
   description: pageData.description,
   openGraph: {
     title: pageData.title,
     description: pageData.description,
     url: "https://minoru-kinugasa-105.github.io/",
-    images: {
-      url: "/images/",
-      width: "50px",
-      height: "50px",
-      alt: "minoru's icon"
-    }
+    images: [
+      {
+        url: "https://minoru-kinugasa-105.github.io/images/icon.png",
+        width: 50,
+        height: 50,
+        alt: "minoru's icon"
+      }
+    ]
   },
-  twitter: {},
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "https://minoru-kinugasa-105.github.io/images/icon.png",
+        alt: "minoru's icon"
+      }
+    ]
+  },
 };
 
 export default function RootLayout({

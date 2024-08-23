@@ -1,0 +1,134 @@
+.about {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 1rem;
+
+    .profile {
+        width: 16rem;
+
+        hr {
+            width: 100%;
+        }
+
+        .profile-icon {
+
+            .profile-img {
+                display: block;
+                margin-inline: auto;
+                width: 256px;
+                height: 256px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+
+        .profile-desc {
+
+            .profile-name {
+                margin: 1rem 0 0;
+                font-size: 1.3rem;
+                font-weight: 600;
+
+                .last-name {
+                    margin-right: 0.1rem;
+                }
+
+                // .first-name {}
+            }
+
+            .profile-category {
+                margin: .5rem 0 0;
+                font-weight: 300;
+                line-height: 1.1rem;
+                font-size: 1.1rem;
+                color: var(--blog-dark-gray);
+            }
+
+            .profile-timezone {
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: "timezone:";
+                    display: block;
+                    margin-right: .5rem;
+                }
+            }
+
+            .profile-link {
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+
+                .twitter,
+                .github,
+                .qiita {
+                    display: block;
+                    text-decoration: underline;
+
+                    &:hover {
+                        a {
+                            .i {
+                                path {
+                                    fill: var(--blog-accent);
+                                }
+                            }
+                        }
+                    }
+
+                    a {
+
+                        .i {
+                            width: 1.5rem;
+                            height: 1.5rem;
+
+                            path {
+                                transition: all .25s;
+                                fill: var(--blog-transparent-accent);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .intro {
+        width: 50rem;
+        border-radius: .375rem;
+        border: solid 2px var(--blog-light-gray);
+
+        .md {
+            width: calc(100% - 2rem);
+            margin-inline: auto;
+
+            .intro-title {
+                display: block;
+                font-size: 1.8rem;
+                padding-bottom: .2rem;
+                border-bottom: solid 1px var(--blog-light-gray);
+            }
+
+            .intro-description {
+                font-size: 1rem;
+            }
+
+            .strong {
+                font-weight: 700;
+            }
+
+            .link {
+                text-decoration: underline;
+                color: var(--blog-accent);
+            }
+
+            .strong,
+            .link {
+                &.d-block {
+                    display: block;
+                }
+            }
+        }
+    }
+}

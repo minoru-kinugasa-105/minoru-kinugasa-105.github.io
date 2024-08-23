@@ -1,7 +1,7 @@
 .header {
     background-color: var(--blog-white);
     width: 100%;
-    height: 65px;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
