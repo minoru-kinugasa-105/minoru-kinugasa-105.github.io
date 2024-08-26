@@ -1,0 +1,26 @@
+.tag-limegreen,
+.tag-green,
+.tag-gray {
+    border-radius: var(--blog-borderRadius);
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: .2rem;
+    font-weight: 300;
+
+    a {
+        color: white;
+        padding: .2rem .3rem;
+    }
+}
+
+.tag-limegreen {
+    background-color: limegreen;
+}
+
+.tag-green {
+    background-color: green;
+}
+
+.tag-gray {
+    background-color: gray;
+}

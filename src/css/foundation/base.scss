@@ -1,3 +1,7 @@
+html {
+    scrollbar-color: var(--blog-scrollbarColor);
+}
+
 body {
     font-family: var(--blog-fontfamily);
     font-weight: 400;
@@ -13,4 +17,8 @@ hr {
     display: block;
     width: calc(100% - 2rem);
     margin-inline: auto;
+}
+
+section {
+    padding-top: 2rem
 }

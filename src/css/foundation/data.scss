@@ -4,6 +4,7 @@
     --blog-light-gray: #d2d2d2;
     --blog-gray: #cccccc;
     --blog-dark-gray: #b0b0b0;
+    --blog-light-black: #2c2c2c;
     --blog-black: #111111;
     
     --blog-green: #4f814d;
@@ -12,6 +13,9 @@
 
     --blog-accent: var(--blog-green);
     --blog-transparent-accent: var(--blog-transparent-green);
+    --blog-scrollbarColor: var(--blog-accent) var(--blog-light-gray);
+
+    --blog-borderRadius: .375rem;
 
     --blog-fontfamily:
         "Noto Sans JP",

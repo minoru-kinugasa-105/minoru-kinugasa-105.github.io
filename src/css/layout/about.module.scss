@@ -1,7 +1,6 @@
 .about {
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
     gap: 1rem;
 
     .profile {
@@ -95,8 +94,8 @@
     }
 
     .intro {
-        width: 50rem;
-        border-radius: .375rem;
+        width: 48rem;
+        border-radius: var(--blog-borderRadius);
         border: solid 2px var(--blog-light-gray);
 
         .md {

@@ -55,7 +55,6 @@ export default function Header() {
                             Blog
                         </Link>
                     </li>
-
                 </ul>
             </nav>
         </header>
