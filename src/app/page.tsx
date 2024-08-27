@@ -7,8 +7,6 @@ import Footer from "@/components/Footer";
 import AboutStyle from "@/css/layout/about.module.scss";
 import WorksStyle from "@/css/layout/works.module.scss";
 import CareerStyle from "@/css/layout/career.module.scss";
-import TagStyle from "@/css/object/component/tag.module.scss";
-import CardStyle from "@/css/object/component/card.module.scss";
 import SectionStyle from "@/css/object/component/section.module.scss";
 import ContactStyle from "@/css/layout/contact.module.scss";
 
