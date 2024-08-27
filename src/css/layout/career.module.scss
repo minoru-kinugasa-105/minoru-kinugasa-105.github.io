@@ -1,0 +1,124 @@
+.career {
+
+    .career-main {
+
+        .timeline {
+            margin: 0 0 0 4rem;
+            padding: 0;
+
+            .timeline-item {
+                display: flex;
+                justify-content: left;
+                gap: 1rem;
+                list-style: none;
+                position: relative;
+                padding-bottom: 3rem;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 2px;
+                    background-color: var(--blog-dark-gray);
+                    position: absolute;
+                    left: 7rem;
+                    top: 4rem;
+                    z-index: 0;
+                }
+
+                &.h-196 {
+                    &::after {
+                        height: calc(196px - 4rem);
+                    }
+                }
+
+                &.h-220 {
+                    &::after {
+                        height: calc(220px - 4rem);
+                    }
+                }
+
+                &.h-268 {
+                    &::after {
+                        height: calc(268px - 4rem);
+                    }
+                }
+
+                &.h-end {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                .timeline-period {
+                    text-align: right;
+                    line-height: 1;
+                    width: 4rem;
+                    max-height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .time-begin,
+                    .period,
+                    .time-end {
+                        color: var(--blog-light-black);
+                        font-weight: 300;
+                        font-size: 0.75rem;
+                        width: 100%;
+                    }
+                }
+
+                .timeline-icon {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: var(--blog-dark-gray);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border: solid 2px var(--blog-light-gray);
+
+                    .i {
+                        width: 1.25rem;
+
+                        path {
+                            fill: var(--blog-dark-white);
+                        }
+                    }
+                }
+
+                .timeline-contents {
+                    max-width: calc(75vw - 14rem);
+
+                    .contents-title {
+                        margin: 0;
+                        max-height: 2.25rem;
+                    }
+
+                    .contents-subtitle {
+                        margin: 0;
+                        font-size: 1rem;
+                        max-height: 1.6rem;
+                        overflow: hidden;
+                    }
+
+                    .contents-desc {
+                        margin: 1rem 0 1rem 0;
+                        color: var(--blog-string);
+
+                        .sentence {
+                            display: block;
+
+                            &.break {
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,18 +2,26 @@
     --blog-white: #ffffff;
     --blog-dark-white: #ededed;
     --blog-light-gray: #d2d2d2;
+    --blog-light-transparent-gray: #d2d2d2ac;
     --blog-gray: #cccccc;
     --blog-dark-gray: #b0b0b0;
     --blog-light-black: #2c2c2c;
     --blog-black: #111111;
-    
+
     --blog-green: #4f814d;
     --blog-dark-green: #395e38;
     --blog-transparent-green: #4f814dac;
 
+    --blog-string: #333333;
     --blog-accent: var(--blog-green);
     --blog-transparent-accent: var(--blog-transparent-green);
     --blog-scrollbarColor: var(--blog-accent) var(--blog-light-gray);
+
+    --blog-js: #F7DF1E;
+    --blog-ts: #3178C6;
+    --blog-go: #00ADD8;
+    --blog-scss: #CC6699;
+    --blog-py: #306998;
 
     --blog-borderRadius: .375rem;
 

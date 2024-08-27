@@ -34,7 +34,7 @@ export default function Header() {
                             href="/about"
                             className={HeaderStyle["header-navlist-item"]}
                         >
-                            Works {/* 成果物と、作ってるもの　作ってるやつは 未公開　開発中　みたいなタグを付けておきたい */}
+                            Works
                         </Link>
                     </li>
 
@@ -43,7 +43,7 @@ export default function Header() {
                             href="/about"
                             className={HeaderStyle["header-navlist-item"]}
                         >
-                            Career {/* 経験、まぁ、今までの経歴をのせる */}
+                            Career
                         </Link>
                     </li>
 

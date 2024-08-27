@@ -22,8 +22,8 @@
             transition: all 1s;
 
             &:hover {
-                border-top: solid 1px var(--blog-gray);
-                border-left: solid 1px var(--blog-gray);
+                border-top: solid 1px var(--blog-light-transparent-gray);
+                border-left: solid 1px var(--blog-light-transparent-gray);
                 border-bottom: solid 1px var(--blog-gray);
                 border-right: solid 1px var(--blog-gray);
             }
@@ -59,12 +59,21 @@
                 padding-right: 3rem;
 
                 .desc-title {
-                    margin: 0 0 .5rem;
+                    margin: 0;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        margin-top: 0.5rem;
+                        width: .5rem;
+                        height: 2px;
+                        background-color: var(--blog-green);
+                    }
                 }
 
                 .desc-explanation {
                     margin: 0;
-                    padding: .8rem 0;
+                    padding: .5rem 0 .8rem;
                 }
             }
         }
