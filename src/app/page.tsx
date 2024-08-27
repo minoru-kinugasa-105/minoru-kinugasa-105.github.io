@@ -182,6 +182,7 @@ export default function Home() {
             </span>
           </h1>
           <div className={`${SectionStyle["main"]} ${WorksStyle["works-main"]}`}>
+            {/* 使用技術を描く、border-radiusで遊ぶ */}
             <Link className={WorksStyle["works-card"]} href="/">
               <div className={WorksStyle["works-headline"]}>
                 <div className={WorksStyle["headline-imgbox"]}>
