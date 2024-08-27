@@ -10,6 +10,7 @@ import CareerStyle from "@/css/layout/career.module.scss";
 import TagStyle from "@/css/object/component/tag.module.scss";
 import CardStyle from "@/css/object/component/card.module.scss";
 import SectionStyle from "@/css/object/component/section.module.scss";
+import ContactStyle from "@/css/layout/contact.module.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNewspaper, faSchool, faCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +22,7 @@ export default function Home() {
       <Header />
 
       <main>
-        <section className={AboutStyle["about"]}>
+        <section className={AboutStyle["about"]} id="about">
           <div className={AboutStyle["profile"]}>
             <div className={AboutStyle["profile-icon"]}>
               <Image
@@ -97,7 +98,7 @@ export default function Home() {
                       </dt>
                       <dd>
                         <Link href="https://x.com/minoru_kinugasa">
-                        https://x.com/minoru_kinugasa
+                          https://x.com/minoru_kinugasa
                         </Link>
                       </dd>
                       <dt>
@@ -105,7 +106,7 @@ export default function Home() {
                       </dt>
                       <dd>
                         <Link href="https://github.com/minoru-kinugasa-105">
-                        https://github.com/minoru-kinugasa-105
+                          https://github.com/minoru-kinugasa-105
                         </Link>
                       </dd>
                     </dl>
@@ -171,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${SectionStyle["section"]} ${WorksStyle["works"]}`}>
+        <section className={`${SectionStyle["section"]} ${WorksStyle["works"]}`} id="works">
           <h1 className={SectionStyle["section-title"]}>
             <span className={SectionStyle["title-text"]}>
               Works
@@ -226,7 +227,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${SectionStyle["section"]} ${CareerStyle["career"]}`}>
+        <section className={`${SectionStyle["section"]} ${CareerStyle["career"]}`} id="career">
           <h1 className={SectionStyle["section-title"]}>
             <span className={SectionStyle["title-text"]}>
               Career
@@ -360,6 +361,30 @@ export default function Home() {
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section className={`${SectionStyle["section"]} ${ContactStyle["contact"]}`} id="contact">
+          <h1 className={SectionStyle["section-title"]}>
+            <span className={SectionStyle["title-text"]}>
+              Contact
+            </span>
+            <span className={SectionStyle["subtitle-text"]}>
+              連絡先
+            </span>
+          </h1>
+          <div className={`${SectionStyle["main"]} ${ContactStyle["contact-main"]}`}>
+            <span className={ContactStyle["contact-text"]}>
+              連絡はTwitter(
+              <Link href="https://x.com/minoru_kinugasa">
+                @minoru_kinugasa
+              </Link>
+              )かGmail(
+              <Link href="mailto:minoru105ts@gmail.com">
+                minoru105ts@gmail.com
+              </Link>
+              )まで！
+            </span>
           </div>
         </section>
       </main >

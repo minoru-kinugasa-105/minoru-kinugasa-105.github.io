@@ -22,16 +22,16 @@ export default function Header() {
 
                     <li className={HeaderStyle["header-navlist-desc"]}>
                         <Link
-                            href="/about"
+                            href="/#about"
                             className={HeaderStyle["header-navlist-item"]}
                         >
-                            About {/* 使用できる技術もここにかく */}
+                            About
                         </Link>
                     </li>
 
                     <li className={HeaderStyle["header-navlist-desc"]}>
                         <Link
-                            href="/about"
+                            href="/#works"
                             className={HeaderStyle["header-navlist-item"]}
                         >
                             Works
@@ -40,7 +40,7 @@ export default function Header() {
 
                     <li className={HeaderStyle["header-navlist-desc"]}>
                         <Link
-                            href="/about"
+                            href="/#career"
                             className={HeaderStyle["header-navlist-item"]}
                         >
                             Career
@@ -49,7 +49,16 @@ export default function Header() {
 
                     <li className={HeaderStyle["header-navlist-desc"]}>
                         <Link
-                            href="/about"
+                            href="/#contact"
+                            className={HeaderStyle["header-navlist-item"]}
+                        >
+                            Contact
+                        </Link>
+                    </li>
+
+                    <li className={HeaderStyle["header-navlist-desc"]}>
+                        <Link
+                            href="/blog"
                             className={HeaderStyle["header-navlist-item"]}
                         >
                             Blog

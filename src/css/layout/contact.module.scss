@@ -1,0 +1,15 @@
+.contact {
+    padding-bottom: 5rem;
+
+    .contact-main {
+        text-align: center;
+
+        .contact-text {
+            width: 100%;
+
+            a {
+                color: var(--blog-accent);
+            }
+        }
+    }
+}
