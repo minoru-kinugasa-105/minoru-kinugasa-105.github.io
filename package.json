@@ -5,11 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build",
-    "export": "next export",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out",
-    "lint": "next lint"
+    "build": "next build"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
