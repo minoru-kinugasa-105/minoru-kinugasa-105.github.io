@@ -2,11 +2,37 @@
     {
         "slug": "2024-8-24",
         "title": "現在開発中です...",
-        "content": "if you see this message, you're successful!"
+        "description": "現在開発中のページですが、これはdescriptionです。",
+        "content": "<p>This is an <strong>example</strong> post with <a href='#'>HTML content</a>.</p>",
+        "posted": "26 Feb 2024",
+        "tag": [
+            {
+                "name": "React",
+                "color": "tag-limegreen"
+            },
+            {
+                "name": "Vue",
+                "color": "tag-green"
+            }
+        ],
+        "image": "icon.png"
     },
     {
         "slug": "2024-8-25",
         "title": "現在開発中です...",
-        "content": "if you see this message, you're successful!"
+        "description": "現在開発中のページですが、これはdescriptionです。",
+        "posted": "26 Feb 2024",
+        "tag": [
+            {
+                "name": "React",
+                "color": "tag-limegreen"
+            },
+            {
+                "name": "Vue",
+                "color": "tag-green"
+            }
+        ],
+        "content": "<p>This is an <strong>example</strong> post with <a href='#'>HTML content</a>.</p>",
+        "image": "icon.png"
     }
 ]

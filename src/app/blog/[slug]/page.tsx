@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 // 型定義
 interface Post {
     slug: string;
@@ -35,10 +37,16 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
     }
 
     return (
-        <div>
-            <h1>{post.title}</h1>
-            <p>{post.content}</p>
-        </div>
+        <>
+            <Header />
+
+            <main>
+                <h1>{post.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            </main>
+
+            <Footer />
+        </>
     );
 };
 

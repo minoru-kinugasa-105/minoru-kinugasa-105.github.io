@@ -15,6 +15,15 @@ import "@/css/layout/blog.scss";
 interface Post {
     slug: string;
     title: string;
+    content: string;
+    image: string;
+    posted: string;
+    description: string;
+    isBig: boolean;
+    tag: {
+        name: string;
+        color: string;
+    }[];
 }
 
 async function getPosts(): Promise<Post[]> {
@@ -41,273 +50,44 @@ export default async function Blog() {
                         </span>
                     </h1>
                     <div className="main blog-main">
-                        {/* <div className="blog-article">
-                        <article className="card big-card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
 
-                        <article className="card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-
-                        <article className="card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-
-                        <article className="card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-
-                        <article className="card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-
-                        <article className="card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-
-                        <article className="card big-card">
-                            <div className="card-imgbox">
-                                <Image
-                                    src="/images/icon.png"
-                                    width={100}
-                                    height={80}
-                                    alt="article image"
-                                    className="card-img"
-                                />
-                            </div>
-                            <Link href="/" className="card-explanation">
-                                <h2 className="card-title">
-                                    QuickScript
-                                </h2>
-                                <h3 className="card-desc">
-                                    Discord Botをローコードスクリプトで記述し、ホスティングできるサービスです。
-                                </h3>
-                            </Link>
-                            <div className="card-footer">
-                                <ul className="card-taglist">
-                                    <li className="card-tag tag-limegreen">
-                                        <Link href="#tag">
-                                            React
-                                        </Link>
-                                    </li>
-                                    <li className="card-tag tag-green">
-                                        <Link href="#tag">
-                                            Vue
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <span className="card-date">
-                                    26 Feb 2024
-                                </span>
-                            </div>
-                        </article>
-                        </div> */}
-                        <ul>
+                        <div className="blog-article">
                             {posts.map((post) => (
-                                <li key={post.slug}>
-                                    <a href={`/blog/${post.slug}`}>{post.title}</a>
-                                </li>
+                                <article key={post.slug} className={`card ${post.isBig ? "big-card" : ""}`}>
+                                    <div className="card-imgbox">
+                                        <Image
+                                            src={`/images/blog/${post.image}`}
+                                            width={100}
+                                            height={80}
+                                            alt="article image"
+                                            className="card-img"
+                                        />
+                                    </div>
+                                    <Link href={`/blog/${post.slug}`} className="card-explanation">
+                                        <h2 className="card-title">
+                                            {post.title}
+                                        </h2>
+                                        <h3 className="card-desc">
+                                            {post.description}
+                                        </h3>
+                                    </Link>
+                                    <div className="card-footer">
+                                        <ul className="card-taglist">
+                                            {post.tag.map((tag) => (
+                                                <li key={tag.name} className={`card-tag ${tag.color}`}>
+                                                    <Link href="#tag">
+                                                        {tag.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <span className="card-date">
+                                            {post.posted}
+                                        </span>
+                                    </div>
+                                </article>
                             ))}
-                        </ul>
+                        </div>
 
                         <div className="blog-pagination">
                             <Link href="">«</Link>
