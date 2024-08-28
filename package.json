@@ -6,7 +6,7 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "git": "git add . && git commit -m \"多少のレイアウトなどの調整によるauto commit/push\" && git push origin main"
+    "git": "git add . && git commit -m \"多少のレイアウトなどの調整によるオートcommit/push\" && git push origin main"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",

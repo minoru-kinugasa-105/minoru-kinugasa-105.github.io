@@ -11,14 +11,22 @@
             gap: 1rem;
             grid-template-columns: repeat(4, 20rem);
             grid-auto-rows: 25rem;
+
+            @media screen and (max-width: 1500px) {
+                grid-template-columns: repeat(3, 20rem);
+            }
+            @media screen and (max-width: var(--media-tablet-size)) {
+                grid-template-columns: repeat(2, 20rem);
+            }
         }
+
         .blog-pagination {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: .5rem;
             padding: 3rem 0 7rem;
-            
+
             a {
                 display: flex;
                 align-items: center;
@@ -31,7 +39,7 @@
                 height: 3rem;
                 border-radius: 1.5rem;
                 background-color: var(--blog-light-gray);
-                transition:  all .25s;
+                transition: all .25s;
 
                 &:hover {
                     background-color: var(--blog-gray);
