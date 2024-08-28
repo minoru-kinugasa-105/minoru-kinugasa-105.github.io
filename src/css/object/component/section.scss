@@ -11,16 +11,16 @@
             display: block;
             font-size: 3rem;
             color: var(--blog-light-black);
-            margin-left: -2rem;
             font-family: 'Ubuntu Mono';
+            padding-left: 1rem;
 
             &::after {
                 content: "";
                 display: block;
                 width: 13rem;
                 height: 3px;
-                margin-left: -1rem;
                 margin-top: -1rem;
+                margin-left: -1rem;
                 z-index: 0;
                 background-color: var(--blog-transparent-accent);
             }
@@ -29,7 +29,7 @@
         .subtitle-text {
             display: block;
             font-size: 1rem;
-            margin: .5rem 0 0 -1rem;
+            margin: .5rem 0 0 0;
             font-weight: 400;
             color: var(--blog-dark-gray);
         }
