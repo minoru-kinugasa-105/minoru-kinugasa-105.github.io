@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from 'next';
+
 import fs from 'fs';
 import path from 'path';
 
@@ -12,19 +12,7 @@ import "@/css/object/component/tag.scss";
 import "@/css/object/component/section.scss";
 import "@/css/layout/blog.scss";
 
-interface Post {
-    slug: string;
-    title: string;
-    content: string;
-    image: string;
-    posted: string;
-    description: string;
-    isBig: boolean;
-    tag: {
-        name: string;
-        color: string;
-    }[];
-}
+import Post from "@/types/PostType";
 
 async function getPosts(): Promise<Post[]> {
     const filePath = path.resolve(process.cwd(), 'data', 'posts.json');
@@ -56,7 +44,7 @@ export default async function Blog() {
                                 <article key={post.slug} className={`card ${post.isBig ? "big-card" : ""}`}>
                                     <div className="card-imgbox">
                                         <Image
-                                            src={`/images/blog/${post.image}`}
+                                            src={`/images/blog/${post.thumbnail}`}
                                             width={100}
                                             height={80}
                                             alt="article image"
@@ -73,9 +61,9 @@ export default async function Blog() {
                                     </Link>
                                     <div className="card-footer">
                                         <ul className="card-taglist">
-                                            {post.tag.map((tag) => (
+                                        {post.tag.map((tag: { name: string; color: string }) => (
                                                 <li key={tag.name} className={`card-tag ${tag.color}`}>
-                                                    <Link href="#tag">
+                                                    <Link href={`/tag/${tag.name}`}>
                                                         {tag.name}
                                                     </Link>
                                                 </li>

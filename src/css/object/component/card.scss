@@ -10,6 +10,10 @@
         width: 40.5rem;
         grid-column: span 2;
 
+        .card-imgbox {
+            height: 14rem;
+        }
+
         .card-explanation {
 
             .card-title,
@@ -42,12 +46,23 @@
         text-decoration: none;
         color: var(--blog-light-black);
 
+        &:hover {
+
+            .card-title,
+            .card-desc {
+                color: var(--blog-dark-green);
+                text-decoration: underline;
+            }
+        }
+
 
         .card-title {
             width: calc($card-width - 2rem);
             margin: 0 0 .8rem 0;
             font-size: 1.2rem;
             margin-inline: auto;
+            transition: all .25s;
+            text-decoration: none;
         }
 
         .card-desc {
@@ -56,6 +71,8 @@
             font-weight: 400;
             margin: .8rem 0;
             margin-inline: auto;
+            transition: all .25s;
+            text-decoration: none;
         }
     }
 

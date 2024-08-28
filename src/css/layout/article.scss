@@ -1,0 +1,182 @@
+.article {
+    display: block;
+    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+    width: 50rem;
+    margin-inline: auto;
+    font-family: 'Zen Maru Gothic', 'Kiwi Maru';
+
+    .article-title {}
+
+    .article-author {
+
+        .author-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .author-name {
+            font-size: .8rem;
+            font-weight: 400;
+            font-family: "";
+            color: var(--blog-light-black);
+            margin-left: 0.5rem;
+        }
+    }
+
+    .article-tag {
+        list-style: none;
+        margin: .5rem 0 1.5rem 0;
+        padding: 0;
+    }
+
+    .article-content {
+        $normal-fz: 1.1rem;
+        padding: .5rem 0 1rem;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: $normal-fz;
+            margin: 3rem 0;
+        }
+
+        ul {
+            line-height: 1.75;
+            margin: -1.5rem 0;
+
+            li {
+                font-size: $normal-fz;
+            }
+        }
+
+        a {
+            color: var(--blog-accent);
+            border-bottom: solid 1px transparent;
+            text-decoration: none;
+            transition: .25s;
+
+            &:hover {
+                color: var(--blog-dark-accent);
+                border-bottom: solid 1px var(--blog-dark-accent);
+            }
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        small {
+            font-size: .8rem;
+            color: var(--blog-vdark-gray);
+        }
+
+        img {
+            display: block;
+            margin-inline: auto;
+            min-width: 80%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .citation {
+            padding-left: 2rem;
+            margin: 1rem 0 0 0.2rem;
+            min-height: 2rem;
+            border-left: solid 1px var(--blog-dark-gray);
+        }
+
+        .blank {
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        .cancellation {
+            font-size: 1rem;
+            text-decoration: line-through;
+        }
+    }
+
+    .article-footer {
+        padding: 2rem 0 5rem;
+        border-radius: 1rem;
+
+        .footer-author {
+            display: flex;
+            align-items: center;
+
+            .author-headline {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .headline-icon {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                .headline-link {
+                    gap: .5rem;
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: var(--blog-dark-green);
+                                }
+                            }
+                        }
+
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+
+                            path {
+                                transition: all .25s;
+                                fill: var(--blog-transparent-green);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .author-intro {
+                margin-left: 3rem;
+
+                h4 {
+                    font-size: 1.2rem;
+                    margin: 0 0 .5rem 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .article-recommendation {
+        text-align: center;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+        }
+    }
+}

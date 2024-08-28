@@ -3,10 +3,11 @@
     padding-top: 4rem;
 
     .blog-main {
-        margin-top: 2rem;
+        margin-top: 5rem;
 
         .blog-article {
             display: grid;
+            justify-content: center;
             gap: .5rem;
             grid-template-columns: repeat(3, 20rem);
             grid-auto-rows: 25rem;

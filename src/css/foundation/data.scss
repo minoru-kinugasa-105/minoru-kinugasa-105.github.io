@@ -1,10 +1,12 @@
 :root {
     --blog-white: #ffffff;
+    --blog-transparent-white: #ffffff37;
     --blog-dark-white: #ededed;
     --blog-light-gray: #d2d2d2;
     --blog-light-transparent-gray: #d2d2d2ac;
     --blog-gray: #cccccc;
     --blog-dark-gray: #b0b0b0;
+    --blog-vdark-gray: #6a6a6a;
     --blog-light-black: #2c2c2c;
     --blog-black: #111111;
 
@@ -15,6 +17,7 @@
     --blog-string: #333333;
     --blog-accent: var(--blog-green);
     --blog-transparent-accent: var(--blog-transparent-green);
+    --blog-dark-accent: var(--blog-dark-green);
     --blog-scrollbarColor: var(--blog-accent) var(--blog-light-gray);
 
     --blog-js: #F7DF1E;
