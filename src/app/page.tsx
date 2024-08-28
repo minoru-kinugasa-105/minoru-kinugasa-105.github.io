@@ -4,11 +4,11 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import AboutStyle from "@/css/layout/about.module.scss";
-import WorksStyle from "@/css/layout/works.module.scss";
-import CareerStyle from "@/css/layout/career.module.scss";
-import SectionStyle from "@/css/object/component/section.module.scss";
-import ContactStyle from "@/css/layout/contact.module.scss";
+import "@/css/layout/about.scss";
+import "@/css/layout/works.scss";
+import "@/css/layout/career.scss";
+import "@/css/object/component/section.scss";
+import "@/css/layout/contact.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNewspaper, faSchool, faCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
@@ -20,65 +20,65 @@ export default function Home() {
       <Header />
 
       <main>
-        <section className={AboutStyle["about"]} id="about">
-          <div className={AboutStyle["profile"]}>
-            <div className={AboutStyle["profile-icon"]}>
+        <section className="about" id="about">
+          <div className="profile">
+            <div className="profile-icon">
               <Image
                 src="/images/icon.png"
                 alt="minoru's icon"
                 width={256}
                 height={256}
-                className={AboutStyle["profile-img"]}
+                className="profile-img"
               />
             </div>
-            <div className={AboutStyle["profile-desc"]}>
-              <h1 className={AboutStyle["profile-name"]}>
-                <span className={AboutStyle["last-name"]}>
+            <div className="profile-desc">
+              <h1 className="profile-name">
+                <span className="last-name">
                   衣笠
                 </span>
-                <span className={AboutStyle["first-name"]}>
+                <span className="first-name">
                   みのる
                 </span>
               </h1>
-              <h2 className={AboutStyle["profile-category"]}>
+              <h2 className="profile-category">
                 Frontend Engineer with Backend Experience
               </h2>
 
               <hr />
 
-              <div className={AboutStyle["profile-timezone"]}>
+              <div className="profile-timezone">
                 Asia / Tokyo
               </div>
 
               <hr />
 
-              <div className={AboutStyle["profile-link"]}>
-                <span className={AboutStyle["twitter"]}>
+              <div className="profile-link">
+                <span className="twitter">
                   <a href="https://x.com/minoru_kinugasa">
-                    <FontAwesomeIcon icon={faSquareXTwitter} className={AboutStyle["i"]} />
+                    <FontAwesomeIcon icon={faSquareXTwitter} className="i" />
                   </a>
                 </span>
-                <span className={AboutStyle["github"]}>
+                <span className="github">
                   <a href="https://github.com/minoru-kinugasa-105">
-                    <FontAwesomeIcon icon={faGithub} className={AboutStyle["i"]} />
+                    <FontAwesomeIcon icon={faGithub} className="i" />
                   </a>
                 </span>
-                <span className={AboutStyle["qiita"]}>
+                <span className="qiita">
                   <a href="https://qiita.com/minoru_kinugasa">
-                    <FontAwesomeIcon icon={faNewspaper} className={AboutStyle["i"]} />
+                    <FontAwesomeIcon icon={faNewspaper} className="i" />
                   </a>
                 </span>
               </div>
             </div>
           </div>
-          <div className={AboutStyle["intro"]}>
-            <div className={AboutStyle["md"]}>
-              <h3 className={AboutStyle["intro-title"]}>
+          <div className="intro">
+            <div className="md">
+              <h3 className="intro-title">
                 Hi! I'm Japanese Web Enngineer!
               </h3>
-              <div className={AboutStyle["intro-description"]}>
-                <div className={AboutStyle["intro-top"]}>
-                  <div className={AboutStyle["top-text"]}>
+              <div className="intro-description">
+                <div className="intro-top">
+                  <div className="top-text">
                     <h5>
                       Follow me!✨
                     </h5>
@@ -109,25 +109,25 @@ export default function Home() {
                       </dd>
                     </dl>
                   </div>
-                  <div className={AboutStyle["top-skill"]}>
+                  <div className="top-skill">
                     <h5>
                       Skill bar
                     </h5>
-                    <div className={AboutStyle["skill-ratiobox"]}>
-                      <div className={AboutStyle["skill-ratio"]}>
-                        <div className={AboutStyle["ratio-js"]}></div>
-                        <div className={AboutStyle["ratio-ts"]}></div>
-                        <div className={AboutStyle["ratio-go"]}></div>
-                        <div className={AboutStyle["ratio-scss"]}></div>
-                        <div className={AboutStyle["ratio-py"]}></div>
+                    <div className="skill-ratiobox">
+                      <div className="skill-ratio">
+                        <div className="ratio-js"></div>
+                        <div className="ratio-ts"></div>
+                        <div className="ratio-go"></div>
+                        <div className="ratio-scss"></div>
+                        <div className="ratio-py"></div>
                       </div>
                     </div>
-                    <div className={AboutStyle["skill-commentary"]}>
-                      <div className={AboutStyle["ratio-js"]}>Javascript</div>
-                      <div className={AboutStyle["ratio-ts"]}>Typescript</div>
-                      <div className={AboutStyle["ratio-go"]}>Go</div>
-                      <div className={AboutStyle["ratio-scss"]}>Scss</div>
-                      <div className={AboutStyle["ratio-py"]}>Python</div>
+                    <div className="skill-commentary">
+                      <div className="ratio-js">Javascript</div>
+                      <div className="ratio-ts">Typescript</div>
+                      <div className="ratio-go">Go</div>
+                      <div className="ratio-scss">Scss</div>
+                      <div className="ratio-py">Python</div>
                     </div>
                   </div>
                 </div>
@@ -170,22 +170,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${SectionStyle["section"]} ${WorksStyle["works"]}`} id="works">
-          <h1 className={SectionStyle["section-title"]}>
-            <span className={SectionStyle["title-text"]}>
+        <section className="section works" id="works">
+          <h1 className="section-title">
+            <span className="title-text">
               Works
             </span>
-            <span className={SectionStyle["subtitle-text"]}>
+            <span className="subtitle-text">
               成果物・開発中
             </span>
           </h1>
-          <div className={`${SectionStyle["main"]} ${WorksStyle["works-main"]}`}>
+          <div className="main works-main">
             {/* 使用技術を描く、border-radiusで遊ぶ */}
-            <Link className={WorksStyle["works-card"]} href="/">
-              <div className={WorksStyle["works-headline"]}>
-                <div className={WorksStyle["headline-imgbox"]}>
+            <Link className="works-card" href="/">
+              <div className="works-headline">
+                <div className="headline-imgbox">
                   <Image
-                    className={WorksStyle["headline-img"]}
+                    className="headline-img"
                     src="/images/transparent-icon.png"
                     width={100}
                     height={100}
@@ -193,20 +193,20 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className={WorksStyle["works-desc"]}>
-                <h2 className={WorksStyle["desc-title"]}>
+              <div className="works-desc">
+                <h2 className="desc-title">
                   Portfolio
                 </h2>
-                <p className={WorksStyle["desc-explanation"]}>
+                <p className="desc-explanation">
                   PortfolioにBlogをつけたサイトです！
                 </p>
               </div>
             </Link>
-            <Link className={WorksStyle["works-card"]} href="/">
-              <div className={WorksStyle["works-headline"]}>
-                <div className={WorksStyle["headline-imgbox"]}>
+            <Link className="works-card" href="/">
+              <div className="works-headline">
+                <div className="headline-imgbox">
                   <Image
-                    className={WorksStyle["headline-img"]}
+                    className="headline-img"
                     src="/images/QuickScript.png"
                     width={80}
                     height={80}
@@ -214,11 +214,11 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className={WorksStyle["works-desc"]}>
-                <h2 className={WorksStyle["desc-title"]}>
+              <div className="works-desc">
+                <h2 className="desc-title">
                   QuickScript
                 </h2>
-                <p className={WorksStyle["desc-explanation"]}>
+                <p className="desc-explanation">
                   開発中ですが、DiscordのBotをローコードで作成でき、ホスティングができるサービスです。
                 </p>
               </div>
@@ -226,134 +226,134 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${SectionStyle["section"]} ${CareerStyle["career"]}`} id="career">
-          <h1 className={SectionStyle["section-title"]}>
-            <span className={SectionStyle["title-text"]}>
+        <section className="section career" id="career">
+          <h1 className="section-title">
+            <span className="title-text">
               Career
             </span>
-            <span className={SectionStyle["subtitle-text"]}>
+            <span className="subtitle-text">
               経歴
             </span>
           </h1>
-          <div className={`${SectionStyle["main"]} ${CareerStyle["career-main"]}`}>
-            <ul className={CareerStyle["timeline"]}>
-              <li className={`${CareerStyle["timeline-item"]} ${CareerStyle["h-196"]}`}>
-                <time dateTime="" className={CareerStyle["timeline-period"]}>
-                  <span className={CareerStyle["time-begin"]}>
+          <div className="main career-main">
+            <ul className="timeline">
+              <li className="timeline-item h-196">
+                <time dateTime="" className="timeline-period">
+                  <span className="time-begin">
                     2022/6/13
                   </span>
                 </time>
-                <div className={CareerStyle["timeline-icon"]}>
-                  <FontAwesomeIcon icon={faCode} className={CareerStyle["i"]} />
+                <div className="timeline-icon">
+                  <FontAwesomeIcon icon={faCode} className="i" />
                 </div>
-                <div className={CareerStyle["timeline-contents"]}>
-                  <h2 className={CareerStyle["contents-title"]}>
+                <div className="timeline-contents">
+                  <h2 className="contents-title">
                     はじめのいっぽ
                   </h2>
-                  <h3 className={CareerStyle["contents-subtitle"]}>
+                  <h3 className="contents-subtitle">
                     全てはここから始まった
                   </h3>
-                  <p className={CareerStyle["contents-desc"]}>
-                    <span className={CareerStyle["sentence"]}>
+                  <p className="contents-desc">
+                    <span className="sentence">
                       中学2年生にしてプログラミングに憧れ、htmlだけいじって楽しんでた。
                     </span>
-                    <span className={CareerStyle["sentence"]}>
+                    <span className="sentence">
                       詐欺サイトなんかを作って遊んだりしてた。
                     </span>
                   </p>
                 </div>
               </li>
 
-              <li className={`${CareerStyle["timeline-item"]} ${CareerStyle["h-220"]}`}>
-                <time dateTime="" className={CareerStyle["timeline-period"]}>
-                  <span className={CareerStyle["time-begin"]}>
+              <li className="timeline-item h-220">
+                <time dateTime="" className="timeline-period">
+                  <span className="time-begin">
                     2022/11/20
                   </span>
-                  <span className={CareerStyle["period"]}>
+                  <span className="period">
                     -
                   </span>
-                  <span className={CareerStyle["time-end"]}>
+                  <span className="time-end">
                     2022/11/22
                   </span>
                 </time>
-                <div className={CareerStyle["timeline-icon"]}>
-                  <FontAwesomeIcon icon={faCode} className={CareerStyle["i"]} />
+                <div className="timeline-icon">
+                  <FontAwesomeIcon icon={faCode} className="i" />
                 </div>
-                <div className={CareerStyle["timeline-contents"]}>
-                  <h2 className={CareerStyle["contents-title"]}>
+                <div className="timeline-contents">
+                  <h2 className="contents-title">
                     いきなりの実践
                   </h2>
-                  <h3 className={CareerStyle["contents-subtitle"]}>
+                  <h3 className="contents-subtitle">
                     友達にサイト作成を頼まれる
                   </h3>
-                  <p className={CareerStyle["contents-desc"]}>
-                    <span className={CareerStyle["sentence"]}>
+                  <p className="contents-desc">
+                    <span className="sentence">
                       htmlさわれるというだけだったのに、見栄をはって「サイト作成できる」と言ってしまったばっかりにサイト作成を依頼されてしまった。
                     </span>
-                    <span className={CareerStyle["sentence"]}>
+                    <span className="sentence">
                       もちろんまだcssの知識もなかったわけで、死ぬ気でやって悟られないように頑張ってました。(-_-;)
                     </span>
                   </p>
                 </div>
               </li>
 
-              <li className={`${CareerStyle["timeline-item"]} ${CareerStyle["h-268"]}`}>
-                <time dateTime="" className={CareerStyle["timeline-period"]}>
-                  <span className={CareerStyle["time-begin"]}>
+              <li className="timeline-item h-268">
+                <time dateTime="" className="timeline-period">
+                  <span className="time-begin">
                     2023/04/03
                   </span>
                 </time>
-                <div className={CareerStyle["timeline-icon"]}>
-                  <FontAwesomeIcon icon={faNodeJs} className={CareerStyle["i"]} />
+                <div className="timeline-icon">
+                  <FontAwesomeIcon icon={faNodeJs} className="i" />
                 </div>
-                <div className={CareerStyle["timeline-contents"]}>
-                  <h2 className={CareerStyle["contents-title"]}>
+                <div className="timeline-contents">
+                  <h2 className="contents-title">
                     プログラミングの楽しさを知る
                   </h2>
-                  <h3 className={CareerStyle["contents-subtitle"]}>
+                  <h3 className="contents-subtitle">
                     バックエンドを触り始める
                   </h3>
-                  <p className={CareerStyle["contents-desc"]}>
-                    <span className={`${CareerStyle["sentence"]} ${CareerStyle["break"]}`}>
+                  <p className="contents-desc">
+                    <span className="sentence break">
                       Discordというチャットアプリの、Bot開発をJavascriptでやり始めた。
                     </span>
-                    <span className={CareerStyle["sentence"]}>
+                    <span className="sentence">
                       バックエンドが初めてだったので、概念の理解が難しかったけど、教えてくれる先輩がいたので挫折せずにすんだ。
                     </span>
-                    <span className={CareerStyle["sentence"]}>
+                    <span className="sentence">
                       Botがただ返信をしてくれただけで飛び跳ねるほど嬉しかったし、楽しかった。
                     </span>
                   </p>
                 </div>
               </li>
 
-              <li className={`${CareerStyle["timeline-item"]} ${CareerStyle["h-end"]}`}>
-                <time dateTime="" className={CareerStyle["timeline-period"]}>
-                  <span className={CareerStyle["time-begin"]}>
+              <li className="timeline-item h-end">
+                <time dateTime="" className="timeline-period">
+                  <span className="time-begin">
                     2024/05/30
                   </span>
-                  <span className={CareerStyle["period"]}>
+                  <span className="period">
                     -
                   </span>
-                  <span className={CareerStyle["time-end"]}>
+                  <span className="time-end">
                     現在
                   </span>
                 </time>
-                <div className={CareerStyle["timeline-icon"]}>
-                  <FontAwesomeIcon icon={faCodeBranch} className={CareerStyle["i"]} />
+                <div className="timeline-icon">
+                  <FontAwesomeIcon icon={faCodeBranch} className="i" />
                 </div>
-                <div className={CareerStyle["timeline-contents"]}>
-                  <h2 className={CareerStyle["contents-title"]}>
+                <div className="timeline-contents">
+                  <h2 className="contents-title">
                     サービス開発開始！
                   </h2>
-                  <h3 className={CareerStyle["contents-subtitle"]}>
+                  <h3 className="contents-subtitle">
                     Discord Bot ローコードサービスを開発し始める
                   </h3>
-                  <p className={CareerStyle["contents-desc"]}>
-                    <span className={CareerStyle["sentence"]}>
+                  <p className="contents-desc">
+                    <span className="sentence">
                       公開しているサービスや成果物を作ったことがなかったので、サービスを作る気になりました。
                     </span>
-                    <span className={CareerStyle["sentence"]}>
+                    <span className="sentence">
                       DisocrdのBotをサービスを使わずに作ろうとすると、とんでもない知識と時間を必要とするので、全ての手順をより簡単にできるようにと作り始めました！
                     </span>
                   </p>
@@ -363,17 +363,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${SectionStyle["section"]} ${ContactStyle["contact"]}`} id="contact">
-          <h1 className={SectionStyle["section-title"]}>
-            <span className={SectionStyle["title-text"]}>
+        <section className="section contact" id="contact">
+          <h1 className="section-title">
+            <span className="title-text">
               Contact
             </span>
-            <span className={SectionStyle["subtitle-text"]}>
+            <span className="subtitle-text">
               連絡先
             </span>
           </h1>
-          <div className={`${SectionStyle["main"]} ${ContactStyle["contact-main"]}`}>
-            <span className={ContactStyle["contact-text"]}>
+          <div className="main contact-main">
+            <span className="contact-text">
               連絡はTwitter(
               <Link href="https://x.com/minoru_kinugasa">
                 @minoru_kinugasa
@@ -386,7 +386,7 @@ export default function Home() {
             </span>
           </div>
         </section>
-      </main >
+      </main>
 
       <Footer />
     </>

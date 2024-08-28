@@ -1,65 +1,66 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeaderStyle from "@/css/layout/header.module.scss";
+
+import "@/css/layout/header.scss";
 
 export default function Header() {
     return (
-        <header className={HeaderStyle["header"]}>
-            <div className={HeaderStyle["header-headline"]}>
+        <header className="header">
+            <div className="header-headline">
                 <Image
                     src="/images/icon.png"
                     alt="minoru's icon"
                     width={45}
                     height={45}
-                    className={HeaderStyle["headline-img"]}
+                    className="headline-img"
                 />
-                <span className={HeaderStyle["headline-name"]}>
+                <span className="headline-name">
                     minoru-kinugasa
                 </span>
             </div>
-            <nav className={HeaderStyle["header-nav"]}>
-                <ul className={HeaderStyle["header-navlist"]}>
+            <nav className="header-nav">
+                <ul className="header-navlist">
 
-                    <li className={HeaderStyle["header-navlist-desc"]}>
+                    <li className="header-navlist-desc">
                         <Link
                             href="/#about"
-                            className={HeaderStyle["header-navlist-item"]}
+                            className="header-navlist-item"
                         >
                             About
                         </Link>
                     </li>
-                    
-                    <li className={HeaderStyle["header-navlist-desc"]}>
+
+                    <li className="header-navlist-desc">
                         <Link
                             href="/#works"
-                            className={HeaderStyle["header-navlist-item"]}
+                            className="header-navlist-item"
                         >
                             Works
                         </Link>
                     </li>
 
-                    <li className={HeaderStyle["header-navlist-desc"]}>
+                    <li className="header-navlist-desc">
                         <Link
                             href="/#career"
-                            className={HeaderStyle["header-navlist-item"]}
+                            className="header-navlist-item"
                         >
                             Career
                         </Link>
                     </li>
 
-                    <li className={HeaderStyle["header-navlist-desc"]}>
+                    <li className="header-navlist-desc">
                         <Link
                             href="/#contact"
-                            className={HeaderStyle["header-navlist-item"]}
+                            className="header-navlist-item"
                         >
                             Contact
                         </Link>
                     </li>
 
-                    <li className={HeaderStyle["header-navlist-desc"]}>
+                    <li className="header-navlist-desc">
                         <Link
                             href="/blog"
-                            className={HeaderStyle["header-navlist-item"]}
+                            className="header-navlist-item"
                         >
                             Blog
                         </Link>

@@ -1,9 +1,9 @@
-import FooterStyle from "@/css/layout/footer.module.scss";
+import "@/css/layout/footer.scss";
 
 export default function Footer() {
     return (
-        <footer className={FooterStyle["footer"]}>
-            <span className={FooterStyle["footer-powered"]}>
+        <footer className="footer">
+            <span className="footer-powered">
                 Powered by GitHub Pages.
             </span>
         </footer>
