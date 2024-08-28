@@ -1,7 +1,9 @@
 .footer {
     width: 100%;
     height: var(--footer-height);
-    background-color: var(--blog-gray);
+    background-color: var(--blog-white);
+    border-top: solid 2px var(--blog-dark-white);
+    border-bottom: solid 2px var(--blog-dark-white);
     display: flex;
     align-items: center;
     justify-content: center;

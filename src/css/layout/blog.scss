@@ -1,0 +1,41 @@
+.blog {
+    margin-top: 0;
+    padding-top: 4rem;
+
+    .blog-main {
+        margin-top: 2rem;
+
+        .blog-article {
+            display: grid;
+            gap: .5rem;
+            grid-template-columns: repeat(3, 20rem);
+            grid-auto-rows: 25rem;
+        }
+        .blog-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .25rem;
+            padding: 2.5rem 0 5rem;
+            
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+                color: var(--blog-black);
+                font-size: 0.75rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 1.25rem;
+                background-color: var(--blog-light-gray);
+                transition:  all .25s;
+
+                &:hover {
+                    background-color: var(--blog-gray);
+                }
+            }
+        }
+    }
+}
