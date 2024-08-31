@@ -46,7 +46,7 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
         <>
             <Header />
 
-            <main>
+            <main className="article-main">
                 <section className="article">
                     <h1 className="article-title">
                         {post.title}
