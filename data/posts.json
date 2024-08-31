@@ -3,11 +3,11 @@
         "slug": "2024-8-28",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -29,11 +29,11 @@
         "slug": "2024-8-29",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -54,11 +54,11 @@
         "slug": "2024-8-30",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -79,11 +79,11 @@
         "slug": "2024-8-31",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -104,11 +104,11 @@
         "slug": "2024-9-1",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -129,11 +129,11 @@
         "slug": "2024-9-2",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -155,11 +155,11 @@
         "slug": "2024-9-3",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -181,11 +181,11 @@
         "slug": "2024-9-4",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
@@ -206,11 +206,11 @@
         "slug": "2024-9-5",
         "title": "てすとBlog",
         "description": "この記事はUnit V AI Cameraや、Maixduinoなどで動作する機械学習モデルのkmodelをDockerコンテナ上でビルドして生成するチュートリアルです。",
-        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！ <br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p></p><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<Link href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</Link>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<div className=\"citation\">参照元:<div className=\"blank\"></div><Link href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</Link></div><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
+        "content": "<h2>てすとBlog</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>また、このBlogではこの記事を読んでいる人が見やすいデザインにするために独自でデザイン・システムを作成しています。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Next.jsをデプロイする技術をGithubが提供していたため、それを利用しました。<span className=\"citation\">参照元:<span className=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span className=\"cancellation\"><small>もっとスマートな方法があった気がしてなりません…</small></span></small></p>",
         "author": {
             "image": "icon.png",
             "name": "衣笠 みのる",
-            "intro": "日本のまんなからへんでロボット作ったり旅したりしてる白熊です。吠えたり噛みついたりしないから仲良くしてね。",
+            "intro": "ちーばくんの口あたりで気ままに生きてます！twitterふぉろーしてね！",
             "twitter": "https://x.com/minoru_kinugasa",
             "mail": "mailto:minoru105ts@gmail.com"
         },
