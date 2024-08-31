@@ -11,9 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@/css/layout/article.scss";
 import "@/css/object/component/tag.scss";
 
-
-
-
 export default function Article() {
     return (
         <>
