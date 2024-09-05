@@ -67,48 +67,52 @@ const TagPage = async ({ params }: { params: { slug: string } }) => {
                     <div className="main blog-main">
                         <div className="blog-article">
                             {
-                                // filteredPosts?.length > 0 ? 
-                                (
-                                    filteredPosts.map((post, index) => (
-                                        <article key={post.slug} className={`card ${filteredPosts.length > 1 && index === 0 ? "big-card" : ""}`}>
-                                            <div className="card-imgbox">
-                                                <Image
-                                                    src={`/images/blog/${post.thumbnail}`}
-                                                    width={100}
-                                                    height={80}
-                                                    alt="article image"
-                                                    className="card-img"
-                                                />
-                                            </div>
-                                            <Link href={`/blog/${post.slug}`} className="card-explanation">
-                                                <h2 className="card-title">
-                                                    {post.title}
-                                                </h2>
-                                                <h3 className="card-desc">
-                                                    {post.description}
-                                                </h3>
-                                            </Link>
-                                            <div className="card-footer">
-                                                <ul className="card-taglist">
-                                                    {post.tag.map((tag: { name: string; color: string }) => (
-                                                        <li key={tag.name} className={`card-tag ${tag.color}`}>
-                                                            <Link href={`/tag/${tag.name}`}>
-                                                                {tag.name}
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                                <span className="card-date">
-                                                    {post.posted}
-                                                </span>
-                                            </div>
-                                        </article>
-                                    ))
-                                    // ) : (
-                                    //     <p>{slug}というタグは見つかりませんでした。</p>
-                                )
+                                filteredPosts?.length > 0 ?
+                                    (
+                                        filteredPosts.map((post, index) => (
+                                            <article key={post.slug} className={`card ${filteredPosts.length > 1 && index === 0 ? "big-card" : ""}`}>
+                                                <div className="card-imgbox">
+                                                    <Image
+                                                        src={`/images/blog/${post.thumbnail}`}
+                                                        width={100}
+                                                        height={80}
+                                                        alt="article image"
+                                                        className="card-img"
+                                                    />
+                                                </div>
+                                                <Link href={`/blog/${post.slug}`} className="card-explanation">
+                                                    <h2 className="card-title">
+                                                        {post.title}
+                                                    </h2>
+                                                    <h3 className="card-desc">
+                                                        {post.description}
+                                                    </h3>
+                                                </Link>
+                                                <div className="card-footer">
+                                                    <ul className="card-taglist">
+                                                        {post.tag.map((tag: { name: string; color: string }) => (
+                                                            <li key={tag.name} className={`card-tag ${tag.color}`}>
+                                                                <Link href={`/blog/tag/${tag.name}`}>
+                                                                    {tag.name}
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                    <span className="card-date">
+                                                        {post.posted}
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        ))
+                                    ) : ""
                             }
                         </div>
+                        {
+                            filteredPosts?.length > 0 ? "" :
+                                (
+                                    <p className="blog-notfound">{slug}というタグは見つかりませんでした。</p>
+                                )
+                        }
                     </div>
                 </section>
             </main>
