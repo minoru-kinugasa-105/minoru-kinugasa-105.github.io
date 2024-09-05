@@ -40,8 +40,8 @@ export default async function Blog() {
                     <div className="main blog-main">
 
                         <div className="blog-article">
-                            {posts.map((post) => (
-                                <article key={post.slug} className={`card ${post.isBig ? "big-card" : ""}`}>
+                            {posts.map((post, index) => (
+                                <article key={post.slug} className={`card ${index === 0 ? "big-card" : ""}`}>
                                     <div className="card-imgbox">
                                         <Image
                                             src={`/images/blog/${post.thumbnail}`}
@@ -63,7 +63,7 @@ export default async function Blog() {
                                         <ul className="card-taglist">
                                         {post.tag.map((tag: { name: string; color: string }) => (
                                                 <li key={tag.name} className={`card-tag ${tag.color}`}>
-                                                    <Link href={`/tag/${tag.name}`}>
+                                                    <Link href={`/blog//tag/${tag.name}`}>
                                                         {tag.name}
                                                     </Link>
                                                 </li>

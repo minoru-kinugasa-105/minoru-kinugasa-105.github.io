@@ -66,7 +66,7 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
                     <ul className="article-tag">
                         {post.tag.map((tag: { name: string; color: string }) => (
                             <li key={tag.name} className={tag.color}>
-                                <Link href={`/tag/${tag.name}`}>
+                                <Link href={`/blog/tag/${tag.name}`}>
                                     {tag.name}
                                 </Link>
                             </li>
