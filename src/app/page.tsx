@@ -244,100 +244,11 @@ export default function Home() {
           </h1>
           <div className="main career-main">
             <ul className="timeline">
+
               <li className="timeline-item h-196">
                 <time dateTime="" className="timeline-period">
                   <span className="time-begin">
-                    2022/6/13
-                  </span>
-                </time>
-                <div className="timeline-icon">
-                  <FontAwesomeIcon icon={faCode} className="i" />
-                </div>
-                <div className="timeline-contents">
-                  <h2 className="contents-title">
-                    はじめのいっぽ
-                  </h2>
-                  <h3 className="contents-subtitle">
-                    全てはここから始まった
-                  </h3>
-                  <p className="contents-desc">
-                    <span className="sentence">
-                      中学2年生にしてプログラミングに憧れ、htmlだけいじって楽しんでた。
-                    </span>
-                    <span className="sentence">
-                      詐欺サイトなんかを作って遊んだりしてた。
-                    </span>
-                  </p>
-                </div>
-              </li>
-
-              <li className="timeline-item h-220">
-                <time dateTime="" className="timeline-period">
-                  <span className="time-begin">
-                    2022/11/20
-                  </span>
-                  <span className="period">
-                    -
-                  </span>
-                  <span className="time-end">
-                    2022/11/22
-                  </span>
-                </time>
-                <div className="timeline-icon">
-                  <FontAwesomeIcon icon={faCode} className="i" />
-                </div>
-                <div className="timeline-contents">
-                  <h2 className="contents-title">
-                    いきなりの実践
-                  </h2>
-                  <h3 className="contents-subtitle">
-                    友達にサイト作成を頼まれる
-                  </h3>
-                  <p className="contents-desc">
-                    <span className="sentence">
-                      htmlさわれるというだけだったのに、見栄をはって「サイト作成できる」と言ってしまったばっかりにサイト作成を依頼されてしまった。
-                    </span>
-                    <span className="sentence">
-                      もちろんまだcssの知識もなかったわけで、死ぬ気でやって悟られないように頑張ってました。(-_-;)
-                    </span>
-                  </p>
-                </div>
-              </li>
-
-              <li className="timeline-item h-268">
-                <time dateTime="" className="timeline-period">
-                  <span className="time-begin">
-                    2023/04/03
-                  </span>
-                </time>
-                <div className="timeline-icon">
-                  <FontAwesomeIcon icon={faNodeJs} className="i" />
-                </div>
-                <div className="timeline-contents">
-                  <h2 className="contents-title">
-                    プログラミングの楽しさを知る
-                  </h2>
-                  <h3 className="contents-subtitle">
-                    バックエンドを触り始める
-                  </h3>
-                  <p className="contents-desc">
-                    <span className="sentence break">
-                      Discordというチャットアプリの、Bot開発をJavascriptでやり始めた。
-                    </span>
-                    <span className="sentence">
-                      バックエンドが初めてだったので、概念の理解が難しかったけど、教えてくれる先輩がいたので挫折せずにすんだ。
-                    </span>
-                    <span className="sentence">
-                      Botがただ返信をしてくれただけで飛び跳ねるほど嬉しかったし、楽しかった。
-                    </span>
-                  </p>
-                </div>
-              </li>
-
-              <li className="timeline-item h-end">
-                <time dateTime="" className="timeline-period">
-                  <span className="time-begin">
-                    2024/05/30
+                    2024/4/1
                   </span>
                   <span className="period">
                     -
@@ -347,21 +258,48 @@ export default function Home() {
                   </span>
                 </time>
                 <div className="timeline-icon">
-                  <FontAwesomeIcon icon={faCodeBranch} className="i" />
+                  <FontAwesomeIcon icon={faCode} className="i" />
                 </div>
                 <div className="timeline-contents">
                   <h2 className="contents-title">
-                    サービス開発開始！
+                    S高等学校
+                  </h2>
+                  <p className="contents-desc">
+                    <span className="sentence">
+                      自分のやりたいことをやる時間を作るために、通信制の高校に入りました！
+                    </span>
+                  </p>
+                </div>
+              </li>
+
+              <li className="timeline-item">
+                <time dateTime="" className="timeline-period">
+                  <span className="time-begin">
+                    2024/4/1
+                  </span>
+                  <span className="period">
+                    -
+                  </span>
+                  <span className="time-end">
+                    現在
+                  </span>
+                </time>
+                <div className="timeline-icon">
+                  <FontAwesomeIcon icon={faCode} className="i" />
+                </div>
+                <div className="timeline-contents">
+                  <h2 className="contents-title">
+                    KADOKAWAドワンゴ情報工科学院
                   </h2>
                   <h3 className="contents-subtitle">
-                    Discord Bot ローコードサービスを開発し始める
+                    高等部
                   </h3>
                   <p className="contents-desc">
                     <span className="sentence">
-                      公開しているサービスや成果物を作ったことがなかったので、サービスを作る気になりました。
+                      入学してからは、授業でPythonの基礎からWebアプリケーション構築まで学びました。
                     </span>
                     <span className="sentence">
-                      DisocrdのBotをサービスを使わずに作ろうとすると、とんでもない知識と時間を必要とするので、全ての手順をより簡単にできるようにと作り始めました！
+                      授業外でも、興味のある技術であるReactやVueなどのWebフレームワークを中心に、Goでバックエンドを構築するなど、様々なことに取り組んでいます！
                     </span>
                   </p>
                 </div>
