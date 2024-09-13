@@ -1,27 +1,2 @@
 [
-    {
-        "slug": "2024-9-10",
-        "title": "BlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとるBlogたいとる",
-        "description": "BlogがいようのぶんしょうBlogがいようのぶんしょう\nBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょうBlogがいようのぶんしょう",
-        "content": "<h2>へっどらいん</h2><p>この記事は開発段階のBlogの記事となっております！<br />この記事は以下の技術を用いて開発されています。</p><ul><li>React (Next.js)</li><li>Github Pages</li></ul><p>このぶろぐは自分のすきなようにつくってたり書いたりしてます。<br />デザインは、<a href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a>を参考に作成いたしました！</p><p>また、ページの公開に使用しているGithub Pagesですが、Github Actionを使用してnext.jsをそのままpushしてでぷろいしています。<span class=\"citation\">参照元:<span class=\"blank\"></span><a href=\"https://github.com/gregrickaby/nextjs-github-pages\">https://github.com/gregrickaby/nextjs-github-pages</a></span><small><span class=\"cancellation\"><small>これであってるのかいまだにわかってません...</small></span></small></p>",
-        "author": {
-            "image": "icon.png",
-            "name": "みのる",
-            "intro": "千葉県にすんでるこうこうせいです",
-            "twitter": "https://x.com/m_hiyoko_dayo",
-            "mail": "mailto:minoru105ts@gmail.com"
-        },
-        "posted": "10 Sep 2024",
-        "tag": [
-            {
-                "name": "Vue",
-                "color": "tag-limegreen"
-            },
-            {
-                "name": "React",
-                "color": "tag-green"
-            }
-        ],
-        "thumbnail": "yosora.png"
-    }
 ]
