@@ -3,11 +3,34 @@
     justify-content: center;
     gap: 2rem;
 
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
+
     .profile {
         width: 16rem;
 
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            width: 40rem;
+            margin-inline: auto;
+        }
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+
         hr {
             width: 100%;
+
+            @media screen and (max-width: 800px) {
+                width: 80%;
+            }
         }
 
         .profile-icon {
@@ -23,6 +46,11 @@
         }
 
         .profile-desc {
+            width: 16rem;
+
+            @media screen and (max-width: 1000px) {
+                width: 24rem;
+            }
 
             .profile-name {
                 margin: 1rem 0 0;
@@ -48,6 +76,11 @@
                 display: flex;
                 align-items: center;
 
+                @media screen and (max-width: 800px) {
+                    justify-content: center;
+                    text-align: center;
+                }
+
                 &::before {
                     content: "timezone:";
                     display: block;
@@ -59,6 +92,10 @@
                 display: flex;
                 align-items: center;
                 gap: .75rem;
+
+                @media screen and (max-width: 800px) {
+                    justify-content: center;
+                }
 
                 .twitter,
                 .github,
@@ -96,7 +133,18 @@
     .intro {
         width: 47rem;
         border-left: solid 2px var(--blog-light-gray);
-        padding-left: 1 rem;
+        padding-left: 1rem;
+
+        @media screen and (max-width: 1000px) {
+            padding: 0;
+            margin-inline: auto;
+            border-left: 0;
+            margin-top: 4rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 90%;
+        }
 
         .md {
             width: calc(100% - 2rem);
@@ -107,6 +155,9 @@
                 font-size: 1.8rem;
                 padding-bottom: .2rem;
                 border-bottom: solid 1px var(--blog-light-gray);
+                @media screen and (max-width: 800px) {
+                    font-size: 1.5rem;
+                }
             }
 
             .intro-description {
@@ -117,8 +168,16 @@
                     justify-content: center;
                     margin-bottom: 0.5rem;
 
+                    @media screen and (max-width: 800px) {
+                        flex-direction: column;
+                    }
+
                     .top-text {
                         width: 50%;
+
+                        @media screen and (max-width: 800px) {
+                            display: none;
+                        }
 
                         h5 {
                             margin: 0;
@@ -136,8 +195,21 @@
                         width: 45%;
                         border-left: solid 2px var(--blog-light-gray);
 
+                        @media screen and (max-width: 800px) {
+                            width: 60%;
+                        }
+
+                        @media screen and (max-width: 800px) {
+                            border-left: 0;
+                            width: 90%;
+                        }
+
                         h5 {
                             margin: 0 0 0 1.5rem;
+
+                            @media screen and (max-width: 800px) {
+                                display: none;
+                            }
                         }
 
                         .skill-ratiobox {
@@ -244,11 +316,18 @@
                     border-bottom: solid 1px var(--blog-gray);
                     font-size: 1.5rem;
                     margin-bottom: 0.8rem;
+                    @media screen and (max-width: 800px) {
+                        font-size: 1.25rem;
+                    }
                 }
 
                 h5 {
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
                     margin-bottom: 0;
+                    @media screen and (max-width: 800px) {
+                        font-size: 1rem;
+                    }
                 }
 
                 ul {

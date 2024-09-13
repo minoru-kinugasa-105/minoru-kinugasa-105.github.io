@@ -11,10 +11,11 @@ import "@/css/object/component/section.scss";
 import "@/css/layout/contact.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper, faSchool, faCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper, faCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faSquareXTwitter, faGithub, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
+
   return (
     <>
       <Header />
@@ -181,7 +182,7 @@ export default function Home() {
           </h1>
           <div className="main works-main">
             {/* 使用技術を描く、border-radiusで遊ぶ */}
-            <Link className="works-card" href="/">
+            <div className="works-card">
               <div className="works-headline">
                 <div className="headline-imgbox">
                   <Image
@@ -192,6 +193,9 @@ export default function Home() {
                     alt="works-img"
                   />
                 </div>
+                <span className="headline-title">
+                  Portfolio
+                </span>
               </div>
               <div className="works-desc">
                 <h2 className="desc-title">
@@ -201,8 +205,8 @@ export default function Home() {
                   PortfolioにBlogをつけたサイトです！
                 </p>
               </div>
-            </Link>
-            <Link className="works-card" href="/">
+            </div>
+            <div className="works-card">
               <div className="works-headline">
                 <div className="headline-imgbox">
                   <Image
@@ -213,6 +217,9 @@ export default function Home() {
                     alt="works-img"
                   />
                 </div>
+                <span className="headline-title">
+                  QuickScript
+                </span>
               </div>
               <div className="works-desc">
                 <h2 className="desc-title">
@@ -222,7 +229,7 @@ export default function Home() {
                   開発中ですが、DiscordのBotをローコードで作成でき、ホスティングができるサービスです。
                 </p>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
 

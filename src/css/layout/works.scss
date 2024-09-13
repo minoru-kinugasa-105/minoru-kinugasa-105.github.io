@@ -7,8 +7,7 @@
 
         .works-card {
             margin-top: 3rem;
-            display: block;
-            width: 65rem;
+            width: 65vw;
             margin-inline: auto;
             height: 150px;
             border-radius: 50px;
@@ -16,21 +15,30 @@
             align-items: center;
             text-decoration: none;
             color: var(--blog-black);
-            border-top: solid 1px var(--blog-gray);
-            border-left: solid 1px var(--blog-gray);
-            border-bottom: solid 1px transparent;
-            border-right: solid 1px transparent;
-            transition: all 1s;
+            border-top: solid 1px var(--blog-light-transparent-gray);
+            border-left: solid 1px var(--blog-light-transparent-gray);
+            border-bottom: solid 1px var(--blog-gray);
+            border-right: solid 1px var(--blog-gray);
 
-            &:hover {
-                border-top: solid 1px var(--blog-light-transparent-gray);
-                border-left: solid 1px var(--blog-light-transparent-gray);
-                border-bottom: solid 1px var(--blog-gray);
-                border-right: solid 1px var(--blog-gray);
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+            }
+            @media screen and (max-width: 800px) {
+                width: 90vw;
             }
 
             .works-headline {
                 margin-left: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 1rem;
+
+                @media screen and (max-width: 1000px) {
+                    padding-top: 0.5rem;
+                }
 
                 .headline-imgbox {
                     display: flex;
@@ -45,12 +53,30 @@
                         height: 100px;
                         width: 1px;
                         border-radius: 1px;
+
+                        @media screen and (max-width: 1000px) {
+                            display: none;
+                        }
                     }
 
                     .headline-img {
                         width: 70px;
                         height: auto;
                         overflow: hidden;
+
+                        @media screen and (max-width: 1000px) {
+                            width: 45px;
+                        }
+                    }
+                }
+
+                .headline-title {
+                    display: none;
+
+                    @media screen and (max-width: 1000px) {
+                        display: block;
+                        font-size: 1.2rem;
+                        font-weight: 600;
                     }
                 }
             }
@@ -62,19 +88,27 @@
                 .desc-title {
                     margin: 0;
 
-                    &::after {
-                        content: "";
-                        display: block;
-                        margin-top: 0.5rem;
-                        width: .5rem;
-                        height: 2px;
-                        background-color: var(--blog-green);
+                    @media screen and (max-width: 1000px) {
+                        display: none;
                     }
                 }
 
                 .desc-explanation {
                     margin: 0;
                     padding: .5rem 0 .8rem;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        width: .5rem;
+                        height: 2px;
+                        background-color: var(--blog-green);
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        font-size: .9rem;
+                    }
                 }
             }
         }

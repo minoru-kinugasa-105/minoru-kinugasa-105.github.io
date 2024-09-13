@@ -4,19 +4,23 @@
 
     .blog-main {
         margin-top: 5rem;
+        padding-bottom: 3rem;
 
         .blog-article {
             display: grid;
             justify-content: center;
-            gap: 1rem;
-            grid-template-columns: repeat(4, 20rem);
-            grid-auto-rows: 25rem;
+            gap: 2rem;
+            grid-template-columns: repeat(3, 22.5rem);
+            grid-auto-rows: 31rem;
 
-            @media screen and (max-width: 1500px) {
-                grid-template-columns: repeat(3, 20rem);
+            @media screen and (max-width: 1250px) {
+                grid-template-columns: repeat(2, 22.5rem);
             }
-            @media screen and (max-width: var(--media-tablet-size)) {
-                grid-template-columns: repeat(2, 20rem);
+            @media screen and (max-width: 800px) {
+                grid-template-columns: repeat(1, 30rem);
+            }
+            @media screen and (max-width: 650px) {
+                grid-template-columns: repeat(1, 80vw);
             }
         }
 

@@ -49,4 +49,8 @@
     --media-minipc: 1500px;
     --media-tablet-size: 1024px;
     --media-phone-size: 768px;
+    
+    @media screen and (max-width: 800px) {
+        --header-height: 100px
+    }
 }

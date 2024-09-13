@@ -28,7 +28,7 @@ export default async function Blog() {
             <Header />
 
             <main>
-                <section className="section blog">
+                <section className="section first-section blog">
                     <h1 className="section-title">
                         <span className="title-text">
                             Blog

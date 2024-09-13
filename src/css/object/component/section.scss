@@ -5,6 +5,20 @@
     margin-inline: auto;
     margin-top: 4rem;
 
+    @media screen and (max-width: 800px) {
+        width: 90vw;
+    }
+
+    &.first-section {
+        margin-top: 0;
+        padding-top: 0;
+
+        .section-title {
+            margin-top: 0;
+            padding-top: 0.65rem;
+        }
+    }
+
     .section-title {
 
         .title-text {
@@ -13,6 +27,11 @@
             color: var(--blog-light-black);
             font-family: 'Ubuntu Mono';
             padding-left: 1rem;
+
+            @media screen and (max-width: 650px) {
+                font-size: 2rem;
+                padding-left: 0.75rem;
+            }
 
             &::after {
                 content: "";
@@ -23,6 +42,10 @@
                 margin-left: -1rem;
                 z-index: 0;
                 background-color: var(--blog-transparent-accent);
+
+                @media screen and (max-width: 650px) {
+                    width: 8rem;
+                }
             }
         }
 
@@ -32,6 +55,10 @@
             margin: .5rem 0 0 0;
             font-weight: 400;
             color: var(--blog-dark-gray);
+
+            @media screen and (max-width: 650px) {
+                font-size: 0.75rem;
+            }
         }
     }
 
