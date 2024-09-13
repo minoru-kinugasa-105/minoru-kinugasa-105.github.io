@@ -37,15 +37,20 @@
         $normal-fz: 1.1rem;
         padding: .5rem 0 1rem;
 
+        .section {
+            padding: 1rem 0;
+            margin: 0;
+        }
         h2 {
             font-size: 1.8rem;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
         }
 
         p {
             line-height: 1.5;
             font-size: $normal-fz;
-            margin: 3rem 0;
+            margin: 2rem 0;
         }
 
         ul {

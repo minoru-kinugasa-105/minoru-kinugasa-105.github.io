@@ -11,6 +11,10 @@
 
         .card-imgbox {
             height: 18rem;
+
+            .card-img {
+                min-height: 18rem;
+            }
         }
 
         .card-explanation {
@@ -31,7 +35,7 @@
             grid-column: span 1;
 
             .card-imgbox {
-                height: 14rem;
+                min-height: 14rem;
             }
 
             .card-explanation {
@@ -53,7 +57,7 @@
             grid-column: span 1;
 
             .card-imgbox {
-                height: 14rem;
+                min-height: 14rem;
             }
 
             .card-explanation {
@@ -85,6 +89,7 @@
         height: 14rem;
         background-color: var(--blog-white);
         display: flex;
+        overflow: hidden;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -93,8 +98,8 @@
         .card-img {
             width: 100%;
             height: auto;
-            min-height: 14rem;
             overflow: hidden;
+            object-fit: cover;
         }
     }
 

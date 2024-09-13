@@ -63,8 +63,8 @@ export default function RootLayout({
             "family=Roboto+Serif:ital,opsz,wdth,wght,GRAD@0,8..144,50..150,100..900,-50..100;1,8..144,50..150,100..900,-50..100&" +
             "family=Roboto+Slab:wght@100..900&" +
             "family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&" +
-            "family=Kiwi+Maru:wght@400;500&"+
-            "family=Zen+Maru+Gothic:wght@400;500;700;900&"+
+            "family=Kiwi+Maru:wght@400;500&" +
+            "family=Zen+Maru+Gothic:wght@400;500;700;900&" +
             "display=swap"
           }
           rel="stylesheet" />

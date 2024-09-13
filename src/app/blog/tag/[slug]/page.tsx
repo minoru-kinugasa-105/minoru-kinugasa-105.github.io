@@ -46,7 +46,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 // コンポーネント
 const TagPage = async ({ params }: { params: { slug: string } }) => {
-    const { slug } = params;
+    let { slug } = params;
+    slug = decodeURI(slug);
     const posts = await getPosts();
     const filteredPosts = posts.filter(post => post.tag.some(tag => tag.name === slug));
 

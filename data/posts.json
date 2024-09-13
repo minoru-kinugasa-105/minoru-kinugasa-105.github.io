@@ -1,0 +1,23 @@
+[
+    {
+        "slug": "2024-9-10",
+        "title": "Blogを作りました！",
+        "description": "このBlogは、「自分のサイトほしいなぁー」と思ってつくってみたサイトです！びっくりするぐらいちゃちゃっと作ったので、デザインやらなんやらが色々雑です！",
+        "content": "<div class=\"section\"><h2>じこしょうかい</h2><p>こんにちは！このBlogは、「自分のサイトほしいなぁー」と思ってつくってみたサイトです！<br />正直、デザインはとっても苦手なのでところどころ適当なのですが､､､<br />まぁそれも個人Blogのいいところということで！<br /><br />改めまして、僕はWeb開発が趣味なだけの高校1年生です！<br />誕生日は1月15日です！<br /><small>特に書くことがない...</small><br /><br />中学生の頃からロボコンでプログラミングに触れて、どはまりしてこんなことになりました！<br />Blog書き始めたのもその頃の友達の影響です(笑)<br /></p></div><div class=\"section\"><h2>このBlogについて</h2><p>このBlogは、</p><ul><li>React (Next.js)</li><li>GitHub Pages (GitHub Action)</li></ul><p>の技術を使用して開発しています！<br />開発期間はやる気がなかった期間も含めて約2週間です<br />これからちょっとづついろんな機能を付け足していけたらいいなーと思ってます。</p><p>デザインが苦手と冒頭でも言ったのですが、まぁまぁ見やすいのは実は参考にしたデザインがあるからなのです... <br /><span class=\"citation\">参考:<span class=\"blank\"></span><a target='_blank' href=\"https://www.wowthemes.net/memoirs-free-jekyll-theme/\">memoirs-free-jekyll-theme</a></span></p></div><div class=\"section\"><h2>さいごに</h2><p>一番最初の記事、軽く紹介といいつつもテスト的な記事なので特に内容はないんですが､､､<br />更新頻度は大体週1くらいでやっていきたいと思ってます！<br /><small>レスポンシブ対応はマジで早くやります、ごめんなさい；；</small><br />  <br />それと、様々な機能の追加やデザインの修正などは頻繁にやるつもりです！<br />なんかあったらBlog書きます！それじゃ！<br /></p></div>",
+        "author": {
+            "image": "icon.png",
+            "name": "みのる",
+            "intro": "千葉県にすんでるこうこうせいです",
+            "twitter": "https://x.com/m_hiyoko_dayo",
+            "mail": "mailto:minoru105ts@gmail.com"
+        },
+        "posted": "13 Sep 2024",
+        "tag": [
+            {
+                "name": "雑談",
+                "color": "tag-gray"
+            }
+        ],
+        "thumbnail": "icon.png"
+    }
+]
