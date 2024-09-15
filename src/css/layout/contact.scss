@@ -2,13 +2,83 @@
     padding-bottom: 5rem;
 
     .contact-main {
-        text-align: center;
+        width: 59rem;
+        margin-inline: auto;
+        font-size: 1.1rem;
 
         .contact-text {
-            width: 100%;
+            margin-top: 3rem;
 
             a {
-                color: var(--blog-accent);
+                color: var(--blog-transparent-green);
+            }
+        }
+
+        .contact-form {
+            width: max-content;
+            margin-inline: auto;
+            margin-top: 3rem;
+
+            .contact-table {
+                tr {
+                    td {
+                        padding-top: 1rem;
+
+                        .contact-input,
+                        .contact-textarea {
+                            width: 50rem;
+                            padding: 0.75rem;
+                            font-size: 1.1rem;
+                            border-radius: calc(0.3rem + 2px);
+                            cursor: pointer;
+                            outline: solid 0 var(--blog-light-transparent-green);
+                            border: solid 3px
+                                var(--blog-light-transparent-green);
+                            font-family: var(--blog-fontfamily);
+                            &:focus {
+                                border-radius: 0.3rem;
+                                outline: solid 1rem transparent;
+                                border: solid 3px var(--blog-dark-green);
+                            }
+                        }
+                        .contact-input {
+                            height: 3rem;
+                        }
+                        .contact-textarea {
+                            min-height: 9rem;
+                            resize: none;
+                        }
+                    }
+                    .contact-label {
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        text-align-last: left;
+                        width: 9rem;
+                        height: 3rem;
+
+                        label {
+                            cursor: pointer;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .contact-submit {
+                display: block;
+                width: 13rem;
+                height: 3.8rem;
+                margin: 2rem 0;
+                margin-inline: auto;
+                font-size: 1.1rem;
+                border-radius: 1rem;
+                border: 0;
+                color: var(--blog-white);
+                background: linear-gradient(to bottom right, var(--blog-grade));
+
+                &:hover {
+                    box-shadow: 0 0 10px var(--blog-transparent-green);
+                }
             }
         }
     }
