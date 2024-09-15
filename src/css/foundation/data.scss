@@ -36,10 +36,12 @@
 
     --header-height: 65px;
     --footer-height: 50px;
+    --section-Btablet-width: 75vw;
 
     --media-minipc: 1500px;
-    --media-tablet-size: 1024px;
-    --media-phone-size: 768px;
+    --media-big-tablet-size: 1000px;
+    --media-small-tablet-size: 800px;
+    --media-photo-siz: 650px;
 
     @media screen and (max-width: 800px) {
         --header-height: 100px;

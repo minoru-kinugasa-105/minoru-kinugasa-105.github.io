@@ -26,7 +26,8 @@ export default function Contact() {
             </h1>
             <div className="main contact-main">
                 <p className="contact-text">
-                    このサイトについてのご意見や、僕に直接連絡があるときにお使いください！<br /> 
+                    このサイトについてのご意見や、僕に直接連絡があるときにお使いください！
+                    <br />
                     <a href="https://m_hiyoko_dayo">Twitter(X)</a>
                     でのDMでも受け付けてます〜！
                 </p>
@@ -38,7 +39,10 @@ export default function Contact() {
                         <tbody>
                             <tr>
                                 <td className="contact-label">
-                                    <label htmlFor="name">名前</label>
+                                    <label htmlFor="name">
+                                        名前
+                                        <span className="required">*</span>
+                                    </label>
                                 </td>
                                 <td>
                                     <input
@@ -58,6 +62,7 @@ export default function Contact() {
                                 <td className="contact-label">
                                     <label htmlFor="email">
                                         メールアドレス
+                                        <span className="required">*</span>
                                     </label>
                                 </td>
                                 <td>
@@ -76,7 +81,10 @@ export default function Contact() {
                             </tr>
                             <tr>
                                 <td className="contact-label">
-                                    <label htmlFor="message">メッセージ</label>
+                                    <label htmlFor="message">
+                                        メッセージ
+                                        <span className="required">*</span>
+                                    </label>
                                 </td>
                                 <td>
                                     <textarea

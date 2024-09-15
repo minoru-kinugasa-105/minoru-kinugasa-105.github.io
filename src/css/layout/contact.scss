@@ -5,6 +5,9 @@
         width: 59rem;
         margin-inline: auto;
         font-size: 1.1rem;
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
 
         .contact-text {
             margin-top: 3rem;
@@ -18,8 +21,19 @@
             width: max-content;
             margin-inline: auto;
             margin-top: 3rem;
+            @media screen and (max-width: 650px) {
+                width: 100%;
+            }
 
             .contact-table {
+                width: 100%;
+                @media screen and (max-width: 650px) {
+                    tbody,
+                    tr,
+                    td {
+                        display: block;
+                    }
+                }
                 tr {
                     td {
                         padding-top: 1rem;
@@ -39,6 +53,15 @@
                                 border-radius: 0.3rem;
                                 outline: solid 1rem transparent;
                                 border: solid 3px var(--blog-dark-green);
+                            }
+
+                            @media screen and (max-width: 1000px) {
+                                width: calc(
+                                    var(--section-Btablet-width) - 9rem
+                                );
+                            }
+                            @media screen and (max-width: 650px) {
+                                width: 100%;
                             }
                         }
                         .contact-input {
@@ -60,6 +83,11 @@
                         label {
                             cursor: pointer;
                             font-weight: 500;
+
+                            .required {
+                                color: var(--blog-green);
+                                margin-left: 0.1rem;
+                            }
                         }
                     }
                 }
