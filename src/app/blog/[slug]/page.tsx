@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 import fs from 'fs';
 import path from 'path';
@@ -10,12 +10,12 @@ import Footer from '@/components/Footer';
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Post from "@/types/PostType";
+import Post from '@/types/PostType';
 
-import "@/css/layout/article.scss";
-import "@/css/object/component/tag.scss";
+import '@/css/layout/article.scss';
+import '@/css/object/component/tag.scss';
 
 // データを取得する関数
 async function getPosts(): Promise<Post[]> {
@@ -27,7 +27,7 @@ async function getPosts(): Promise<Post[]> {
 // 動的パラメータを生成する関数
 export async function generateStaticParams() {
     const posts = await getPosts();
-    return posts.map(post => ({
+    return posts.map((post) => ({
         slug: post.slug,
     }));
 }
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 const PostPage = async ({ params }: { params: { slug: string } }) => {
     const { slug } = params;
     const posts = await getPosts();
-    const post = posts.find(post => post.slug === slug);
+    const post = posts.find((post) => post.slug === slug);
 
     if (!post) {
         notFound(); // スラグが見つからない場合は404
@@ -48,9 +48,7 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
 
             <main className="article-main">
                 <section className="article">
-                    <h1 className="article-title">
-                        {post.title}
-                    </h1>
+                    <h1 className="article-title">{post.title}</h1>
                     <div className="article-author">
                         <Image
                             src={`/images/blog/${post.author.image}`}
@@ -59,22 +57,24 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
                             alt="Author"
                             className="author-icon"
                         />
-                        <span className="author-name">
-                            {post.author.name}
-                        </span>
+                        <span className="author-name">{post.author.name}</span>
                     </div>
                     <ul className="article-tag">
-                        {post.tag.map((tag: { name: string; color: string }) => (
-                            <li key={tag.name} className={tag.color}>
-                                <Link href={`/blog/tag/${tag.name}`}>
-                                    {tag.name}
-                                </Link>
-                            </li>
-                        ))}
+                        {post.tag.map(
+                            (tag: { name: string; color: string }) => (
+                                <li key={tag.name} className={tag.color}>
+                                    <Link href={`/blog/tag/${tag.name}`}>
+                                        {tag.name}
+                                    </Link>
+                                </li>
+                            )
+                        )}
                     </ul>
                     <hr />
                     <div className="article-content">
-                        <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+                        <div
+                            dangerouslySetInnerHTML={{ __html: post.content }}
+                        ></div>
                     </div>
 
                     <hr />
@@ -98,12 +98,8 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
                                 </div>
                             </div>
                             <div className="author-intro">
-                                <h4>
-                                    {post.author.name}
-                                </h4>
-                                <p>
-                                    {post.author.intro}
-                                </p>
+                                <h4>{post.author.name}</h4>
+                                <p>{post.author.intro}</p>
                             </div>
                         </div>
                     </div>

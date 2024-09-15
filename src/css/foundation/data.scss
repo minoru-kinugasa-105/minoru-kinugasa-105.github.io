@@ -20,28 +20,19 @@
     --blog-dark-accent: var(--blog-dark-green);
     --blog-scrollbarColor: var(--blog-accent) var(--blog-light-gray);
 
-    --blog-js: #F7DF1E;
-    --blog-ts: #3178C6;
-    --blog-go: #00ADD8;
-    --blog-scss: #CC6699;
+    --blog-js: #f7df1e;
+    --blog-ts: #3178c6;
+    --blog-go: #00add8;
+    --blog-scss: #cc6699;
     --blog-py: #306998;
 
-    --blog-borderRadius: .375rem;
+    --blog-borderRadius: 0.375rem;
 
-    --blog-fontfamily:
-        "Noto Sans JP",
-        "Roboto Flex",
-        "Roboto",
-        "Helvetica Neue",
-        Arial,
-        "Hiragino Kaku Gothic ProN",
-        "Hiragino Sans",
-        "Noto Sans",
-        "Meiryo",
-        sans-serif;
+    --blog-fontfamily: 'Noto Sans JP', 'Roboto Flex', 'Roboto', 'Helvetica Neue',
+        Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans',
+        'Meiryo', sans-serif;
 
-    --code-fontfamily:
-        "Roboto Mono";
+    --code-fontfamily: 'Roboto Mono';
 
     --header-height: 65px;
     --footer-height: 50px;
@@ -49,8 +40,8 @@
     --media-minipc: 1500px;
     --media-tablet-size: 1024px;
     --media-phone-size: 768px;
-    
+
     @media screen and (max-width: 800px) {
-        --header-height: 100px
+        --header-height: 100px;
     }
 }

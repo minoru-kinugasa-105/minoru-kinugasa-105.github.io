@@ -20,7 +20,6 @@
     }
 
     .section-title {
-
         .title-text {
             display: block;
             font-size: 3rem;
@@ -34,7 +33,7 @@
             }
 
             &::after {
-                content: "";
+                content: '';
                 display: block;
                 width: 13rem;
                 height: 3px;
@@ -52,7 +51,7 @@
         .subtitle-text {
             display: block;
             font-size: 1rem;
-            margin: .5rem 0 0 0;
+            margin: 0.5rem 0 0 0;
             font-weight: 400;
             color: var(--blog-dark-gray);
 

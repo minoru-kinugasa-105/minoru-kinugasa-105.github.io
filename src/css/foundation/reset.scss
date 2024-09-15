@@ -45,7 +45,7 @@
 }
 
 :where(nav li)::before {
-    content: "\200B";
+    content: '\200B';
     float: left;
 }
 
@@ -150,7 +150,7 @@
     display: list-item;
 }
 
-:where([aria-busy="true" i]) {
+:where([aria-busy='true' i]) {
     cursor: progress;
 }
 
@@ -158,15 +158,15 @@
     cursor: pointer;
 }
 
-:where([aria-disabled="true" i], [disabled]) {
+:where([aria-disabled='true' i], [disabled]) {
     cursor: not-allowed;
 }
 
-:where([aria-hidden="false" i][hidden]) {
+:where([aria-hidden='false' i][hidden]) {
     display: initial;
 }
 
-:where([aria-hidden="false" i][hidden]:not(:focus)) {
+:where([aria-hidden='false' i][hidden]:not(:focus)) {
     clip: rect(0, 0, 0, 0);
     position: absolute;
 }

@@ -16,5 +16,5 @@ export default interface Post {
         intro: string;
         twitter: string;
         mail: string;
-    }
+    };
 }
