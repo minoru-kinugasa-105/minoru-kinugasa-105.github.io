@@ -8,8 +8,8 @@ import '@/css/object/component/section.scss';
 import '@/css/layout/contact.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper, faCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import { faSquareXTwitter, faGithub, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faNewspaper, faSchool } from '@fortawesome/free-solid-svg-icons';
+import { faSquareXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
     return (
@@ -161,7 +161,7 @@ export default function Home() {
                                     <span className="time-end">現在</span>
                                 </time>
                                 <div className="timeline-icon">
-                                    <FontAwesomeIcon icon={faCode} className="i" />
+                                    <FontAwesomeIcon icon={faSchool} className="i" />
                                 </div>
                                 <div className="timeline-contents">
                                     <h2 className="contents-title">S高等学校</h2>
@@ -178,7 +178,7 @@ export default function Home() {
                                     <span className="time-end">現在</span>
                                 </time>
                                 <div className="timeline-icon">
-                                    <FontAwesomeIcon icon={faCode} className="i" />
+                                    <FontAwesomeIcon icon={faSchool} className="i" />
                                 </div>
                                 <div className="timeline-contents">
                                     <h2 className="contents-title">KADOKAWAドワンゴ情報工科学院</h2>

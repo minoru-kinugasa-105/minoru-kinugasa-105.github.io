@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+
+import '@/css/foundation/reset.scss';
 import '@/css/foundation/data.scss';
 import '@/css/foundation/base.scss';
-import '@/css/foundation/reset.scss';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -104,7 +105,7 @@ export default function RootLayout({
             </head>
             <body>
                 <Header />
-                    {children}
+                {children}
                 <Footer />
             </body>
         </html>
