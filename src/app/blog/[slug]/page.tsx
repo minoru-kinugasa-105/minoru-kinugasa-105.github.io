@@ -5,9 +5,6 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -43,76 +40,68 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
     }
 
     return (
-        <>
-            <Header />
+        <main className="article-main">
+            <section className="article">
+                <h1 className="article-title">{post.title}</h1>
+                <div className="article-author">
+                    <Image
+                        src={`/images/blog/${post.author.image}`}
+                        width={50}
+                        height={50}
+                        alt="Author"
+                        className="author-icon"
+                    />
+                    <span className="author-name">{post.author.name}</span>
+                </div>
+                <ul className="article-tag">
+                    {post.tag.map((tag: { name: string; color: string }) => (
+                        <li key={tag.name} className={tag.color}>
+                            <Link href={`/blog/tag/${tag.name}`}>
+                                {tag.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <hr />
+                <div className="article-content">
+                    <div
+                        dangerouslySetInnerHTML={{ __html: post.content }}
+                    ></div>
+                </div>
 
-            <main className="article-main">
-                <section className="article">
-                    <h1 className="article-title">{post.title}</h1>
-                    <div className="article-author">
-                        <Image
-                            src={`/images/blog/${post.author.image}`}
-                            width={50}
-                            height={50}
-                            alt="Author"
-                            className="author-icon"
-                        />
-                        <span className="author-name">{post.author.name}</span>
-                    </div>
-                    <ul className="article-tag">
-                        {post.tag.map(
-                            (tag: { name: string; color: string }) => (
-                                <li key={tag.name} className={tag.color}>
-                                    <Link href={`/blog/tag/${tag.name}`}>
-                                        {tag.name}
-                                    </Link>
-                                </li>
-                            )
-                        )}
-                    </ul>
-                    <hr />
-                    <div className="article-content">
-                        <div
-                            dangerouslySetInnerHTML={{ __html: post.content }}
-                        ></div>
-                    </div>
-
-                    <hr />
-                    <div className="article-footer">
-                        <div className="footer-author">
-                            <div className="author-headline">
-                                <Image
-                                    src={`/images/blog/${post.author.image}`}
-                                    width={50}
-                                    height={50}
-                                    alt="Author"
-                                    className="headline-icon"
-                                />
-                                <div className="headline-link">
-                                    <Link href={post.author.twitter}>
-                                        <FontAwesomeIcon icon={faTwitter} />
-                                    </Link>
-                                    <Link href={post.author.mail}>
-                                        <FontAwesomeIcon icon={faEnvelope} />
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="author-intro">
-                                <h4>{post.author.name}</h4>
-                                <p>{post.author.intro}</p>
+                <hr />
+                <div className="article-footer">
+                    <div className="footer-author">
+                        <div className="author-headline">
+                            <Image
+                                src={`/images/blog/${post.author.image}`}
+                                width={50}
+                                height={50}
+                                alt="Author"
+                                className="headline-icon"
+                            />
+                            <div className="headline-link">
+                                <Link href={post.author.twitter}>
+                                    <FontAwesomeIcon icon={faTwitter} />
+                                </Link>
+                                <Link href={post.author.mail}>
+                                    <FontAwesomeIcon icon={faEnvelope} />
+                                </Link>
                             </div>
                         </div>
+                        <div className="author-intro">
+                            <h4>{post.author.name}</h4>
+                            <p>{post.author.intro}</p>
+                        </div>
                     </div>
-                    {/* <div className="article-recommendation">
+                </div>
+                {/* <div className="article-recommendation">
                         <h2>
                             おすすめの記事
                         </h2>
                     </div> */}
-                </section>
-            </main>
-
-            <Footer />
-        </>
+            </section>
+        </main>
     );
 };
 

@@ -3,6 +3,8 @@ import '@/css/foundation/data.scss';
 import '@/css/foundation/base.scss';
 import '@/css/foundation/reset.scss';
 
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 interface PageData {
     title: string;
     description: string;
@@ -100,7 +102,11 @@ export default function RootLayout({
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
             </head>
-            <body>{children}</body>
+            <body>
+                <Header />
+                    {children}
+                <Footer />
+            </body>
         </html>
     );
 }

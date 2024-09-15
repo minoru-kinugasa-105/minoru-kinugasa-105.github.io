@@ -7,13 +7,7 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header-headline">
-                <Image
-                    src="/images/icon.png"
-                    alt="minoru's icon"
-                    width={45}
-                    height={45}
-                    className="headline-img"
-                />
+                <Image src="/images/icon.png" alt="minoru's icon" width={45} height={45} className="headline-img" />
                 <span className="headline-name">minoru-kinugasa</span>
             </div>
             <nav className="header-nav">
