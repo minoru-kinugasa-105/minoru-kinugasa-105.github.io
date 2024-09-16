@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 
-import '@/css/foundation/reset.scss';
-import '@/css/foundation/data.scss';
 import '@/css/foundation/base.scss';
 
 import Header from '@/components/Header';

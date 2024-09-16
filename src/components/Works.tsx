@@ -1,3 +1,25 @@
+type Project = {
+    id: number;
+    title: string;
+    description: string;
+    imageUrl: string;
+};
+
+const projects: Project[] = [
+    {
+        id: 1,
+        title: 'Portfolio',
+        description: 'PortfolioにBlogをつけたサイトです！',
+        imageUrl: '/images/icon.png',
+    },
+    {
+        id: 2,
+        title: 'QuickScript',
+        description: 'QuickScript: まだ公開はしていませんが、discordのbotをローコードで作成、ホスティングができるサービスです！',
+        imageUrl: '/images/QuickSCriptThumb.png',
+    },
+];
+
 import React from 'react';
 import Image from 'next/image';
 
