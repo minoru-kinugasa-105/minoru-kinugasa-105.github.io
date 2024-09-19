@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.html
 
 # testing
 /coverage
@@ -36,8 +37,5 @@ yarn-error.log*
 next-env.d.ts
 
 templete.json
-dev.html
-dev/page.tsx
 
-blog-make.tsx
-dev.html
+src/app/blog/dev
