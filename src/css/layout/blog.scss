@@ -9,12 +9,12 @@
         .blog-article {
             display: grid;
             justify-content: center;
-            gap: 2rem;
-            grid-template-columns: repeat(3, 22.5rem);
-            grid-auto-rows: 31rem;
+            gap: 1rem;
+            grid-template-columns: repeat(5, 11.25rem);
+            grid-auto-rows: 27rem;
 
             @media screen and (max-width: 1250px) {
-                grid-template-columns: repeat(2, 22.5rem);
+                grid-template-columns: repeat(4, 11.25rem);
             }
             @media screen and (max-width: 800px) {
                 grid-template-columns: repeat(1, 30rem);

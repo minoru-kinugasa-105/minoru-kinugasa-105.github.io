@@ -6,14 +6,18 @@
         "dev": "next dev",
         "start": "next start",
         "build": "next build",
-        "git": "git add . && git commit -m \"多少のレイアウトなどの調整によるオートcommit/push\" && git push origin main"
+        "git": "git add . && git commit -m \"多少のレイアウトなどの調整によるオートcommit/push\" && git push origin main",
+        "blog": "git add . && git commit -m \"記事更新\" && git push origin main"
     },
     "dependencies": {
         "@fortawesome/free-brands-svg-icons": "^6.6.0",
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/react-fontawesome": "^0.2.2",
+        "axios": "^1.7.7",
+        "cheerio": "^1.0.0",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
+        "fs": "^0.0.1-security",
         "lucide-react": "^0.441.0",
         "next": "14.2.5",
         "react": "^18",

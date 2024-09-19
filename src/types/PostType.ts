@@ -5,7 +5,7 @@ export default interface Post {
     thumbnail: string;
     posted: string;
     description: string;
-    isBig: boolean;
+    isBig?: boolean;
     tag: {
         name: string;
         color: string;
