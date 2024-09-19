@@ -65,7 +65,7 @@ export default async function Blog() {
             <section className="section first-section blog">
                 <h1 className="section-title">
                     <span className="title-text">Blog</span>
-                    <span className="subtitle-text">気まぐれに更新します！</span>
+                    <span className="subtitle-text">気まぐれに更新します！Qiitaの記事も混入してるのでよろしくです！</span>
                 </h1>
                 <div className="main blog-main">
                     <div className="blog-article">
