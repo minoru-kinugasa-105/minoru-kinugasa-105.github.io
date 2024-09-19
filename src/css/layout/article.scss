@@ -90,6 +90,12 @@
             height: auto;
         }
 
+        .inline-text {
+            background-color: var(--blog-light-gray);
+            border-radius: .2rem;
+            padding: 0 .2rem;
+        }
+
         .citation {
             display: block;
             padding-left: 2rem;
