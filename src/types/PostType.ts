@@ -1,4 +1,5 @@
 export default interface Post {
+    type?: string;
     slug: string;
     title: string;
     content: string;
