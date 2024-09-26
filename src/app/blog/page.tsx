@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import { promises as fs } from 'fs';
 import path from 'path';
 import axios from 'axios';
@@ -12,14 +11,67 @@ import '@/css/layout/blog.scss';
 import Post from '@/types/PostType';
 import QiitaPost from '@/types/QiitaPostType';
 
+const BASE_URL = 'https://qiita.com/api/v2/users';
+const userId = 'minoru_kinugasa';
+const API_TOKEN = '571568e50099fb5c673a6b55f593d89effe98182';
+
 async function getPosts(): Promise<(Post | QiitaPost)[]> {
     const filePath = path.resolve(process.cwd(), 'data', 'posts.json');
     const jsonData = await fs.readFile(filePath, 'utf-8');
-    return jsonData ? JSON.parse(jsonData) : undefined;
+    return jsonData ? JSON.parse(jsonData) : [];
+}
+
+async function fetchQiitaPosts(): Promise<QiitaPost[]> {
+    try {
+        const response = await axios.get(`${BASE_URL}/${userId}/items`, {
+            headers: {
+                Authorization: `Bearer ${API_TOKEN}`,
+            },
+        });
+
+        return response.data.map((article: { url: string }) => ({
+            url: article.url,
+        }));
+    } catch (error) {
+        console.error('記事の取得中にエラーが発生しました:', error);
+        return [];
+    }
+}
+
+async function fetchOGData(url: string): Promise<QiitaPost> {
+    const qiitaPost: QiitaPost = {
+        title: '',
+        description: '',
+        thumbnail: '',
+        url,
+    };
+
+    try {
+        const { data: html } = await axios.get(url);
+        const ogTitleMatch = html.match(/<meta property="og:title" content="([^"]*)"/);
+        const ogDescriptionMatch = html.match(/<meta property="og:description" content="([^"]*)"/);
+        const ogImageMatch = html.match(/<meta property="og:image" content="([^"]*)"/);
+
+        qiitaPost.title = ogTitleMatch ? ogTitleMatch[1] : '';
+        qiitaPost.description = ogDescriptionMatch ? ogDescriptionMatch[1] : '';
+        qiitaPost.thumbnail = ogImageMatch ? ogImageMatch[1].replace(/&amp;/g, '&') : '';
+
+        if (!qiitaPost.title || !qiitaPost.description || !qiitaPost.thumbnail) {
+            console.warn(`OG data incomplete for URL: ${url}`);
+        }
+    } catch (error) {
+        console.error('Failed to fetch OG data:', error);
+    }
+
+    return qiitaPost;
 }
 
 export default async function Blog() {
     const posts = await getPosts();
+    const qiitaPosts = await fetchQiitaPosts();
+
+    // 各QiitaポストのOGPデータを取得
+    const qiitaPostData = await Promise.all(qiitaPosts.map(post => fetchOGData(post.url)));
 
     return (
         <main>
@@ -30,92 +82,55 @@ export default async function Blog() {
                 </h1>
                 <div className="main blog-main">
                     <div className="blog-article">
-                        {posts
-                            ? posts.map(async (post, index) => {
-                                  if (post.type === 'general') {
-                                      return (
-                                          <article key={post.type === 'general' ? (post as Post).slug : index} className="card">
-                                              <div className="card-imgbox">
-                                                  <img src={post.thumbnail.startsWith('http') ? `${post.thumbnail}` : `/images/blog/${post.thumbnail}`} alt="article image" className="card-img" />
-                                              </div>
-                                              <Link href={`/blog/${(post as Post).slug}`} className="card-explanation">
-                                                  <h2 className="card-title">{post.title}</h2>
-                                                  <h3 className="card-desc">{post.description}</h3>
-                                              </Link>
-                                              <div className="card-footer">
-                                                  <ul className="card-taglist">
-                                                      {(post as Post).tag.map((tag: { name: string; color: string }) => (
-                                                          <li key={tag.name} className={`card-tag ${tag.color}`}>
-                                                              <Link href={`/blog/tag/${tag.name}`}>{tag.name}</Link>
-                                                          </li>
-                                                      ))}
-                                                  </ul>
-                                                  <span className="card-date">{(post as Post).posted}</span>
-                                              </div>
-                                          </article>
-                                      );
-                                  } else if (post.type === 'qiita') {
-                                      const qiitaPost: QiitaPost = {
-                                          title: '',
-                                          description: '',
-                                          thumbnail: '',
-                                          url: (post as QiitaPost).url,
-                                      };
-
-                                      try {
-                                          const { data: html } = await axios.get((post as QiitaPost).url);
-
-                                          const ogTitleMatch = html.match(/<meta property="og:title" content="([^"]*)"/);
-                                          const ogDescriptionMatch = html.match(/<meta property="og:description" content="([^"]*)"/);
-                                          const ogImageMatch = html.match(/<meta property="og:image" content="([^"]*)"/);
-
-                                          qiitaPost.title = ogTitleMatch ? ogTitleMatch[1] : '';
-                                          qiitaPost.description = ogDescriptionMatch ? ogDescriptionMatch[1] : '';
-                                          qiitaPost.thumbnail = ogImageMatch ? ogImageMatch[1].replace(/&amp;/g, '&') : '';
-
-                                          if (!qiitaPost.title || !qiitaPost.description || !qiitaPost.thumbnail) {
-                                              console.warn(`OG data incomplete for URL: ${(post as QiitaPost).url}`);
-                                          }
-                                      } catch (error) {
-                                          console.error('Failed to fetch OG data:', error);
-                                      }
-
-                                      return (
-                                          <article key={index} className="card">
-                                              <div className="card-imgbox">
-                                                  <img src={qiitaPost.thumbnail.startsWith('http') ? `${qiitaPost.thumbnail}` : `/images/blog/${qiitaPost.thumbnail}`} alt="article image" className="card-img" />
-                                              </div>
-                                              <a href={(qiitaPost as QiitaPost).url} className="card-explanation" target="_blank">
-                                                  <h2 className="card-title">{qiitaPost.title}</h2>
-                                                  <h3 className="card-desc">{qiitaPost.description}</h3>
-                                              </a>
-                                              <div className="card-footer">
-                                                  <ul className="card-taglist">
-                                                      <li key="qiita" className="card-tag tag-limegreen">
-                                                          <Link href={`/blog/tag/Qiita`}>Qiita</Link>
-                                                      </li>
-                                                  </ul>
-                                              </div>
-                                          </article>
-                                      );
-                                  }
-                              })
-                            : ''}
-                    </div>
-
-                    {/* {
-                            posts ? (
-                                <div className="blog-pagination">
-                                    <Link href="">«</Link>
-                                    <Link href="">1</Link>
-                                    <Link href="">2</Link>
-                                    <Link href="">3</Link>
-                                    <Link href="">4</Link>
-                                    <Link href="">5</Link>
-                                    <Link href="">»</Link>
+                        {posts.map((post) => (
+                            <article key={(post as Post).slug} className="card">
+                                <div className="card-imgbox">
+                                    <img
+                                        src={post.thumbnail.startsWith('http') ? `${post.thumbnail}` : `/images/blog/${post.thumbnail}`}
+                                        alt="article image"
+                                        className="card-img"
+                                    />
                                 </div>
-                            ) : ""
-                        } */}
+                                <Link href={`/blog/${(post as Post).slug}`} className="card-explanation">
+                                    <h2 className="card-title">{post.title}</h2>
+                                    <h3 className="card-desc">{post.description}</h3>
+                                </Link>
+                                <div className="card-footer">
+                                    <ul className="card-taglist">
+                                        {(post as Post).tag.map((tag: { name: string; color: string }) => (
+                                            <li key={tag.name} className={`card-tag ${tag.color}`}>
+                                                <Link href={`/blog/tag/${tag.name}`}>{tag.name}</Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <span className="card-date">{(post as Post).posted}</span>
+                                </div>
+                            </article>
+                        ))}
+
+                        {qiitaPostData.map((qiitaPost, index) => (
+                            <article key={index} className="card">
+                                <div className="card-imgbox">
+                                    <img
+                                        src={qiitaPost.thumbnail.startsWith('http') ? `${qiitaPost.thumbnail}` : `/images/blog/${qiitaPost.thumbnail}`}
+                                        alt="article image"
+                                        className="card-img"
+                                    />
+                                </div>
+                                <a href={qiitaPost.url} className="card-explanation" target="_blank" rel="noopener noreferrer">
+                                    <h2 className="card-title">{qiitaPost.title}</h2>
+                                    <h3 className="card-desc">{qiitaPost.description}</h3>
+                                </a>
+                                <div className="card-footer">
+                                    <ul className="card-taglist">
+                                        <li key="qiita" className="card-tag tag-limegreen">
+                                            <Link href={`/blog/tag/Qiita`}>Qiita</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
                 </div>
             </section>
         </main>
